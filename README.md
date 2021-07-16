@@ -1,5 +1,15 @@
 # [wcag-reference](https://www.npmjs.com/package/wcag-reference)
 
+Please note that this is a fork of [wcag-reference](https://github.com/Zauberbutter/wcag-reference). 
+
+Their version is an ES6 module, while this one has been slightly modified to be a CJS module.
+
+Reasoning:
+
+For my specific purposes, I could have thrown together a means to get WCAG information on a Sails.js application. An issue arose where Sails wouldn't run
+due to the way ES6 modules were imported compared to CJS. In order to avoid having to re-modify the module every time there's an update from the original repo,
+I decided to fork it and modify it accordingly.
+
 Gets a reference to any of the WCAG resources for you!
 
 In fact there are 4 documents for each WCAG version:
