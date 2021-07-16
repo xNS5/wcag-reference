@@ -2,8 +2,8 @@ import informations from './data/data.js';
 
 const versionMappings = {
 	'2.0': 'wcag20',
-	2.1: 'wcag21',
-	2.2: 'wcag22',
+	'2.1': 'wcag21',
+	'2.2': 'wcag22',
 };
 
 /**
@@ -32,7 +32,7 @@ const versionMappings = {
  * // }
  * ```
  */
-export function getCriterionData(version, chapter, section, subsection) {
+module.exports = function getCriterionData(version, chapter, section, subsection) {
 	if (!versionMappings[version]) {
 		throw new Error("Requested WCAG Version isn't valid!");
 	}
@@ -82,7 +82,7 @@ export function getCriterionData(version, chapter, section, subsection) {
  * // → 'https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data'
  * ```
  */
-export function getLinkToCriterion(version, chapter, section, subsection) {
+module.exports = function getLinkToCriterion(version, chapter, section, subsection) {
 	const criterionData = getCriterionData(
 		version,
 		chapter,
@@ -122,7 +122,7 @@ export function getLinkToCriterion(version, chapter, section, subsection) {
  * // }
  * ```
  */
-export function getTechniqueData(version, technique) {
+module.exports = function getTechniqueData(version, technique) {
 	if (!versionMappings[version]) {
 		throw new Error("Requested WCAG Version isn't valid!");
 	}
@@ -173,7 +173,7 @@ export function getTechniqueData(version, technique) {
  * // → 'https://www.w3.org/TR/WCAG20-TECHS/SCR27.html'
  * ```
  */
-export function getLinkToTechnique(version, technique) {
+module.exports = function getLinkToTechnique(version, technique) {
 	const techniqueData = getTechniqueData(version, technique);
 
 	let section = '';

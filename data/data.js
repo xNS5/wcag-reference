@@ -1,4 +1,4 @@
-export default {
+module.exports = {
 	wcag20: {
 		informations: {
 			1: {
