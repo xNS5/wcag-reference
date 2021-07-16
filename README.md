@@ -1,4 +1,4 @@
-# [wcag-reference](https://www.npmjs.com/package/wcag-reference)
+# [wcag-reference-cjs](https://www.npmjs.com/package/wcag-reference-cjs)
 
 Please note that this is a fork of [wcag-reference](https://github.com/Zauberbutter/wcag-reference). 
 
