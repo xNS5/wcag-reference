@@ -1,6 +1,6 @@
 module.exports = {
 	wcag20: {
-		informations: {
+		information: {
 			1: {
 				id: 'perceivable',
 				text: 'Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.',

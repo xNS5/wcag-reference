@@ -1,9 +1,9 @@
-import informations from './data/data.js';
+const information = require('./data/data.js');
 
 const versionMappings = {
-	'2.0': 'wcag20',
-	'2.1': 'wcag21',
-	'2.2': 'wcag22',
+	2: 'wcag20',
+	2.1: 'wcag21',
+	2.2: 'wcag22',
 };
 
 /**
@@ -19,7 +19,7 @@ const versionMappings = {
  *
  * @example
  * ```
- * import { getCriterionData } from 'wcag-reference';
+ * import { getCriterionData } from 'wcag-reference-cjs';
  *
  * const data = getCriterionData('2.1', 2, 1, 1);
  * // → {
@@ -32,36 +32,38 @@ const versionMappings = {
  * // }
  * ```
  */
-module.exports = function getCriterionData(version, chapter, section, subsection) {
+const getCriterionData = (version, chapter, section, subsection) => {
 	if (!versionMappings[version]) {
 		throw new Error("Requested WCAG Version isn't valid!");
 	}
 
-	if (!informations[versionMappings[version]].informations[chapter]) {
+	if (!information[versionMappings[version]].informations[chapter]) {
 		throw new Error("Requested chapter doesn't exist!");
 	}
 
 	if (
-		!informations[versionMappings[version]].informations[chapter]
-			.guidelines[section]
+		!information[versionMappings[version]].informations[chapter].guidelines[
+			section
+		]
 	) {
 		throw new Error("Requested section doesn't exist!");
 	}
 
 	if (
-		!informations[versionMappings[version]].informations[chapter]
-			.guidelines[section].successCriterions[subsection]
+		!information[versionMappings[version]].informations[chapter].guidelines[
+			section
+		].successCriterions[subsection]
 	) {
 		throw new Error("Requested subsection doesn't exist!");
 	}
 
 	return Object.assign(
-		informations[versionMappings[version]].informations[chapter].guidelines[
+		information[versionMappings[version]].informations[chapter].guidelines[
 			section
 		].successCriterions[subsection],
-		{ wcagUrl: informations[versionMappings[version]].informations.url }
+		{ wcagUrl: information[versionMappings[version]].informations.url }
 	);
-}
+};
 
 /**
  * Returns a link with an anchor to the specified bullet point or throws
@@ -76,13 +78,13 @@ module.exports = function getCriterionData(version, chapter, section, subsection
  *
  * @example
  * ```
- * import { getLinkToCriterion } from 'wcag-reference';
+ * import { getLinkToCriterion } from 'wcag-reference-cjs';
  *
  * const link = getLinkToCriterion('2.2', 3, 3, 4);
  * // → 'https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data'
  * ```
  */
-module.exports = function getLinkToCriterion(version, chapter, section, subsection) {
+const getLinkToCriterion = (version, chapter, section, subsection) => {
 	const criterionData = getCriterionData(
 		version,
 		chapter,
@@ -91,7 +93,7 @@ module.exports = function getLinkToCriterion(version, chapter, section, subsecti
 	);
 
 	return criterionData.wcagUrl + '#' + criterionData.id;
-}
+};
 
 /**
  * Returns all the available data for the specified technique or throws an
@@ -104,7 +106,7 @@ module.exports = function getLinkToCriterion(version, chapter, section, subsecti
  *
  * @example
  * ```
- * import { getTechniqueData } from 'wcag-reference';
+ * import { getTechniqueData } from 'wcag-reference-cjs';
  *
  * const data21 = getTechniqueData('2.1', 'G57');
  * // → {
@@ -122,7 +124,7 @@ module.exports = function getLinkToCriterion(version, chapter, section, subsecti
  * // }
  * ```
  */
-module.exports = function getTechniqueData(version, technique) {
+const getTechniqueData = (version, technique) => {
 	if (!versionMappings[version]) {
 		throw new Error("Requested WCAG Version isn't valid!");
 	}
@@ -132,8 +134,8 @@ module.exports = function getTechniqueData(version, technique) {
 
 	// checks if the requested technique exists
 	if (
-		!informations[versionMappings[version]].techniques[prefix] ||
-		!informations[versionMappings[version]].techniques[prefix].techniques[
+		!information[versionMappings[version]].techniques[prefix] ||
+		!information[versionMappings[version]].techniques[prefix].techniques[
 			technique
 		]
 	) {
@@ -141,20 +143,19 @@ module.exports = function getTechniqueData(version, technique) {
 	}
 
 	return Object.assign(
-		informations[versionMappings[version]].techniques[prefix].techniques[
+		information[versionMappings[version]].techniques[prefix].techniques[
 			technique
 		],
 		{
-			techniquesUrl:
-				informations[versionMappings[version]].techniques.url,
+			techniquesUrl: information[versionMappings[version]].techniques.url,
 			groupId:
-				informations[versionMappings[version]].techniques[prefix].id,
+				information[versionMappings[version]].techniques[prefix].id,
 			groupPage:
-				informations[versionMappings[version]].techniques[prefix]
+				information[versionMappings[version]].techniques[prefix]
 					.onePage,
 		}
 	);
-}
+};
 
 /**
  * Returns a link with an anchor to the specified technique or throws
@@ -167,13 +168,13 @@ module.exports = function getTechniqueData(version, technique) {
  *
  * @example
  * ```
- * import { getLinkToTechnique } from 'wcag-reference';
+ * import { getLinkToTechnique } from 'wcag-reference-cjs';
  *
  * const link = getLinkToTechnique('2.0', 'SCR27');
  * // → 'https://www.w3.org/TR/WCAG20-TECHS/SCR27.html'
  * ```
  */
-module.exports = function getLinkToTechnique(version, technique) {
+const getLinkToTechnique = (version, technique) => {
 	const techniqueData = getTechniqueData(version, technique);
 
 	let section = '';
@@ -190,4 +191,11 @@ module.exports = function getLinkToTechnique(version, technique) {
 		technique +
 		'.html'
 	);
-}
+};
+
+module.exports = {
+	getLinkToCriterion,
+	getCriterionData,
+	getLinkToTechnique,
+	getTechniqueData,
+};
