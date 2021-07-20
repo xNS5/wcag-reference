@@ -15,8 +15,7 @@
 		"quickref",
 		"understanding",
 		"wcag2.0",
-		"wcag2.1",
-		"wcag2.2"
+		"wcag2.1"
 	],
 	"license": "GPL 3",
 	"bugs": {
@@ -24,16 +23,8 @@
 	},
 	"homepage": "https://github.com/xNS5/wcag-reference-cjs#readme",
 	"devDependencies": {
-		"@axe-core/webdriverjs": "^4.2.2",
-		"eslint": "^7.26.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-config-xo": "^0.36.0",
-		"eslint-plugin-prettier": "^3.4.0",
-		"eslint-plugin-unicorn": "^32.0.1",
 		"got": "^11.8.2",
 		"jsdom": "^16.5.3",
-		"prettier": "^2.3.0",
-		"prettier-eslint": "^12.0.0",
 		"tsd": "^0.15.1"
 	},
 	"files": [
