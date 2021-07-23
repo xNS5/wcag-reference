@@ -2123,7 +2123,7 @@ module.exports = {
 		},
 	},
 	wcag21: {
-		informations: {
+		information: {
 			1: {
 				id: 'perceivable',
 				text: '1. Perceivable: Information and user interface components must be presentable to users in ways they can perceive.',
@@ -4411,7 +4411,7 @@ module.exports = {
 		},
 	},
 	wcag22: {
-		informations: {
+		information: {
 			1: {
 				id: 'perceivable',
 				text: '1. Perceivable: Information and user interface components must be presentable to users in ways they can perceive.',
@@ -6686,7 +6686,7 @@ module.exports = {
 						text: 'SL20: Relying on Silverlight AutomationPeer Behavior to Set AutomationProperties.Name',
 					},
 					SL21: {
-						text: 'SL21: Replacing A Silverlight Timed Animation With a Nonanimated Element',
+						text: 'SL21: Replacing A Silverlight Timed Animation With a Non-animated Element',
 					},
 					SL22: {
 						text: 'SL22: Supporting Browser Zoom in Silverlight',

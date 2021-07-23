@@ -1,9 +1,9 @@
 const information = require('./data/data.js');
 
 const versionMappings = {
-	2: 'wcag20',
-	2.1: 'wcag21',
-	2.2: 'wcag22',
+	'2.0': 'wcag20',
+	'2.1': 'wcag21',
+	'2.2': 'wcag22',
 };
 
 /**
@@ -37,31 +37,21 @@ const getCriterionData = (version, chapter, section, subsection) => {
 		throw new Error("Requested WCAG Version isn't valid!");
 	}
 
-	if (!information[versionMappings[version]].informations[chapter]) {
+	if (!information[versionMappings[version]].information[chapter]) {
 		throw new Error("Requested chapter doesn't exist!");
 	}
 
-	if (
-		!information[versionMappings[version]].informations[chapter].guidelines[
-			section
-		]
-	) {
+	if (!information[versionMappings[version]].information[chapter].guidelines[section]){
 		throw new Error("Requested section doesn't exist!");
 	}
 
-	if (
-		!information[versionMappings[version]].informations[chapter].guidelines[
-			section
-		].successCriterions[subsection]
-	) {
+	if (!information[versionMappings[version]].information[chapter].guidelines[section].successCriterions[subsection]) {
 		throw new Error("Requested subsection doesn't exist!");
 	}
 
 	return Object.assign(
-		information[versionMappings[version]].informations[chapter].guidelines[
-			section
-		].successCriterions[subsection],
-		{ wcagUrl: information[versionMappings[version]].informations.url }
+		information[versionMappings[version]].information[chapter].guidelines[section].successCriterions[subsection],
+		{ wcagUrl: information[versionMappings[version]].information.url }
 	);
 };
 
@@ -133,26 +123,14 @@ const getTechniqueData = (version, technique) => {
 	const prefix = technique.replace(/\d*/g, '');
 
 	// checks if the requested technique exists
-	if (
-		!information[versionMappings[version]].techniques[prefix] ||
-		!information[versionMappings[version]].techniques[prefix].techniques[
-			technique
-		]
-	) {
+	if (!information[versionMappings[version]].techniques[prefix] || !information[versionMappings[version]].techniques[prefix].techniques[technique]){
 		throw new Error("Requested WCAG technique doesn't exist!");
 	}
 
-	return Object.assign(
-		information[versionMappings[version]].techniques[prefix].techniques[
-			technique
-		],
-		{
+	return Object.assign(information[versionMappings[version]].techniques[prefix].techniques[technique], {
 			techniquesUrl: information[versionMappings[version]].techniques.url,
-			groupId:
-				information[versionMappings[version]].techniques[prefix].id,
-			groupPage:
-				information[versionMappings[version]].techniques[prefix]
-					.onePage,
+			groupId: information[versionMappings[version]].techniques[prefix].id,
+			groupPage: information[versionMappings[version]].techniques[prefix].onePage,
 		}
 	);
 };
@@ -183,13 +161,8 @@ const getLinkToTechnique = (version, technique) => {
 	if (version !== '2.0') {
 		section = techniqueData.groupId + '/';
 	}
-
-	return (
-		techniqueData.techniquesUrl +
-		section +
 		// we don't need ".html" for 2.1 & 2.2 but it works so no switch needed
-		technique +
-		'.html'
+	return (techniqueData.techniquesUrl + section + technique + '.html'
 	);
 };
 

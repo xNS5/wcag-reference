@@ -5,11 +5,11 @@ import getSuccessCriterionText from './helper/get-success-criterion-text.js';
 import getInnerText from './helper/get-inner-text.js';
 
 /**
- * Extracts all needed informations from https://www.w3.org/TR/WCAG22/
+ * Extracts all needed information from https://www.w3.org/TR/WCAG22/
  *
  * @returns {Object}
  */
-export async function getWcag22Informations() {
+export async function getWcag22information() {
 	const url = 'https://www.w3.org/TR/WCAG22/';
 	const html = (await got(url)).body;
 	const {
@@ -86,7 +86,7 @@ export async function getWcag22Informations() {
 }
 
 /**
- * Parses informations about wcag 2.2 techniques from
+ * Parses information about wcag 2.2 techniques from
  * https://www.w3.org/WAI/WCAG22/Techniques/
  *
  * @returns {Object}

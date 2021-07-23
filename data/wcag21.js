@@ -6,18 +6,18 @@ import getSuccessCriterionText from './helper/get-success-criterion-text.js';
 import getInnerText from './helper/get-inner-text.js';
 
 /**
- * Extracts all needed informations from https://www.w3.org/TR/WCAG21/
+ * Extracts all needed information from https://www.w3.org/TR/WCAG21/
  *
  * @returns {Object}
  */
-export async function getWcag21Informations() {
+export async function getWcag21information() {
 	const url = 'https://www.w3.org/TR/WCAG21/';
 	const html = (await got(url)).body;
 	const {
 		window: { document },
 	} = new JSDOM(html);
 
-	const informations = { url };
+	const information = { url };
 
 	for (const principleContainer of document.querySelectorAll('.principle')) {
 		// principle
@@ -38,8 +38,7 @@ export async function getWcag21Informations() {
 			// success criterion
 			guideline.successCriterions = {};
 
-			for (const successCriterionNode of guidelineNode.querySelectorAll(
-				'.sc'
+			for (const successCriterionNode of guidelineNode.querySelectorAll('.sc'
 			)) {
 				const successCriterion = {};
 				successCriterion.id = successCriterionNode.id;
@@ -72,18 +71,18 @@ export async function getWcag21Informations() {
 			] = guideline;
 		}
 
-		informations[
+		information[
 			principleContainer
 				.querySelector('h2 .secno')
 				.textContent.replace(/\D/g, '')
 		] = principle;
 	}
 
-	return informations;
+	return information;
 }
 
 /**
- * Parses informations about wcag 2.1 techniques from
+ * Parses information about wcag 2.1 techniques from
  * https://www.w3.org/WAI/WCAG21/Techniques/
  *
  * @returns {Object}

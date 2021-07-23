@@ -1,9 +1,9 @@
 import { writeFile } from 'node:fs/promises';
 import { ESLint } from 'eslint';
 
-import { getWcag20Informations, getWcag20Techniques } from './wcag20.js';
-import { getWcag21Informations, getWcag21Techniques } from './wcag21.js';
-import { getWcag22Informations, getWcag22Techniques } from './wcag22.js';
+import { getWcag20information, getWcag20Techniques } from './wcag20.js';
+import { getWcag21information, getWcag21Techniques } from './wcag21.js';
+import { getWcag22information, getWcag22Techniques } from './wcag22.js';
 
 /**
  * Generates the data used by this library.
@@ -11,15 +11,15 @@ import { getWcag22Informations, getWcag22Techniques } from './wcag22.js';
 async function generateData() {
 	const data = {
 		wcag20: {
-			informations: await getWcag20Informations(),
+			information: await getWcag20information(),
 			techniques: await getWcag20Techniques(),
 		},
 		wcag21: {
-			informations: await getWcag21Informations(),
+			information: await getWcag21information(),
 			techniques: await getWcag21Techniques(),
 		},
 		wcag22: {
-			informations: await getWcag22Informations(),
+			information: await getWcag22information(),
 			techniques: await getWcag22Techniques(),
 		},
 	};

@@ -4,18 +4,16 @@ import got from 'got';
 import getInnerText from './helper/get-inner-text.js';
 
 /**
- * Extracts all needed informations from https://www.w3.org/TR/WCAG20/
+ * Extracts all needed information from https://www.w3.org/TR/WCAG20/
  *
  * @returns {Object}
  */
-export async function getWcag20Informations() {
+export async function getWcag20information() {
 	const url = 'https://www.w3.org/TR/WCAG20/';
 	const html = (await got(url)).body;
-	const {
-		window: { document },
-	} = new JSDOM(html);
+	const { window: { document }, } = new JSDOM(html);
 
-	const informations = { url };
+	const information = { url };
 
 	for (const node of document.querySelectorAll('.principle')) {
 		const principleContainer = node.parentElement;
@@ -28,46 +26,31 @@ export async function getWcag20Informations() {
 		// guidelines
 		principle.guidelines = {};
 
-		for (const guidelineNode of principleContainer.querySelectorAll(
-			'.guideline'
-		)) {
+		for (const guidelineNode of principleContainer.querySelectorAll('.guideline')) {
 			const guidelineContainer = guidelineNode.parentElement;
-
 			const guideline = {};
 			guideline.id = guidelineNode.querySelector('a').id;
 			guideline.text = getInnerText(guidelineNode.querySelector('h3'));
 			guideline.detailedReference =
 				guidelineNode.querySelector('a[href*="w3.org"]').href;
-
 			// success criterion
 			guideline.successCriterions = {};
 
-			for (const successCriterionNode of guidelineContainer.querySelectorAll(
-				'.sc'
-			)) {
+			for (const successCriterionNode of guidelineContainer.querySelectorAll('.sc')) {
 				const successCriterion = {};
 				successCriterion.id = successCriterionNode.id;
-				successCriterion.handle = getInnerText(
-					successCriterionNode.querySelector('.sc-handle')
-				).replace(':', '');
-				successCriterion.quickReference =
-					successCriterionNode.querySelector(
-						'a[href*="quickref"]'
-					).href;
-				successCriterion.detailedReference =
-					successCriterionNode.querySelector(
-						'a[href*="UNDERSTANDING-WCAG20"]'
-					).href;
+				successCriterion.handle = getInnerText(successCriterionNode
+					.querySelector('.sc-handle')).replace(':', '');
+				successCriterion.quickReference = successCriterionNode
+					.querySelector('a[href*="quickref"]').href;
+				successCriterion.detailedReference = successCriterionNode
+					.querySelector('a[href*="UNDERSTANDING-WCAG20"]').href;
 				successCriterion.level = successCriterionNode
 					.querySelector('.sctxt')
 					.textContent.match(/Level (?<level>A{1,3})/)
 					.groups.level.split('').length;
 
-				guideline.successCriterions[
-					successCriterion.handle.match(
-						/^\d\.\d\.(?<number>\d+)/
-					).groups.number
-				] = successCriterion;
+				guideline.successCriterions[ successCriterion.handle.match(/^\d\.\d\.(?<number>\d+)/).groups.number ] = successCriterion;
 			}
 
 			principle.guidelines[
@@ -77,16 +60,16 @@ export async function getWcag20Informations() {
 			] = guideline;
 		}
 
-		informations[
+		information[
 			principle.text.match(/Principle (?<number>\d)/).groups.number
 		] = principle;
 	}
 
-	return informations;
+	return information;
 }
 
 /**
- * Parses informations about wcag 2.0 techniques from
+ * Parses information about wcag 2.0 techniques from
  * https://www.w3.org/TR/WCAG20-TECHS/
  *
  * @returns {Object}
