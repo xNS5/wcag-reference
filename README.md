@@ -155,4 +155,4 @@ node ./data/generate-data.js
 
 # Contributing
 
-Please 
+Please first create an issue with a feature request, then if the feature is needed create a branch with the feature name and create a PR.
