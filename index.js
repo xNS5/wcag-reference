@@ -85,6 +85,35 @@ const getLinkToCriterion = (version, chapter, section, subsection) => {
 	return criterionData.wcagUrl + '#' + criterionData.id;
 };
 
+
+/**
+ * Returns a list of success criterion based on their violation level (e.g. 1, 2, or 3)
+ * @throws When the success criterion not exist.
+ * @param {'2.0' | '2.1'} version
+ * @param {1 | 2 | 3} level
+ * @TODO update README with use description
+ */
+const getCriterionByLevel = (version, level) => {
+	let list = [];
+	if (!versionMappings[version]) {
+		throw new Error("Requested WCAG Version isn't valid!");
+	}
+	let data = information[versionMappings[version]].information
+	for(let chapter in data){
+		const sections = data[chapter].guidelines;
+		for(let section in sections){
+			const subsection = sections[section].successCriterions;
+			for(let criterion in subsection){
+				let subsection_level = subsection[criterion].level;
+				if(subsection_level === level){
+					list.push(subsection[criterion]);
+				}
+			}
+		}
+	}
+	return list;
+}
+
 /**
  * Returns all the available data for the specified technique or throws an
  * error if the given technique doesn't exist.
@@ -171,4 +200,5 @@ module.exports = {
 	getCriterionData,
 	getLinkToTechnique,
 	getTechniqueData,
+	getCriterionByLevel,
 };
