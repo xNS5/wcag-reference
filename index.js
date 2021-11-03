@@ -91,7 +91,7 @@ const getLinkToCriterion = (version, chapter, section, subsection) => {
  * @throws When the success criterion not exist.
  * @param {'2.0' | '2.1'} version
  * @param {1 | 2 | 3} level
- * @TODO update README with use description
+ * @returns {array} List of success criterion that meet the desired level
  */
 const getCriterionByLevel = (version, level) => {
 	let list = [];
