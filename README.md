@@ -1,6 +1,6 @@
 # [wcag-reference-cjs](https://www.npmjs.com/package/wcag-reference-cjs)
 
-Please note that this is a fork of [wcag-reference](https://github.com/Zauberbutter/wcag-reference). 
+Please note that this is a fork of [wcag-reference](https://github.com/Zauberbutter/wcag-reference).
 
 There exists a conflict in Node-based frameworks between CommonJS and ES Modules. The gist of it is that ES Modules
 need to be imported via `import {foo} from 'bar'`, however CJS scripts can't use import statements in that manner.
@@ -41,6 +41,8 @@ npm i wcag-reference-cjs
 
 * getLinkToCriterion(version, chapter, section, subsection) -- returns a URL to the WCAG success criteria matching the chapter, section, and subsection within the specific WCAG version. The version is a string, the rest are integers.
 
+* getCriterionByLevel(version, level) -- creates a list of WCAG success criterion with the desired level (A-AAA).
+
 * getCriterionData(version, chapter, section, subsection) -- returns an object containing the success criterion id, handle (e.g. '2.1.1 Keyboard'), quick reference URL, detailed reference URL, success criteria level (1-3 -> A-AAA), and a url to the WCAG itself. The first input is a string, the rest are integers.
 
 * getTechniqueData(version, technique) -- returns an object containing the technique description, group ID, and group page. Both inputs are strings (see below for an example).
@@ -64,6 +66,28 @@ import { getLinkToCriterion } from 'wcag-reference';
 const link = getLinkToCriterion('2.2', 3, 3, 4);
 // → 'https://www.w3.org/TR/WCAG22/#error-prevention-legal-financial-data'
 ```
+
+### Get all Success Criterion of a Specific Level
+```js
+getCriterionByLevel(version, level)
+```
+* `version`: needs to be either `'2.0'` or `'2.1'`
+* `level`: needs to be `1`,`2`, or `3` (1 being `'A'` and 3 being `'AAA'`
+
+```js
+import { getCriterionByLevel } from 'wcag-reference';
+
+const link = getCriterionByLevel('2.2', 3);
+// → '{
+//  id: 'sign-language-prerecorded',
+// 	handle: '1.2.6 Sign Language (Prerecorded)',
+// 	quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#sign-language-prerecorded',
+// 	detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded.html',
+// 	level: 3
+// },
+// {...}'
+```
+
 
 ### Get a link to a specific technique
 
