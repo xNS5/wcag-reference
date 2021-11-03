@@ -3,11 +3,11 @@ module.exports = {
 		information: {
 			1: {
 				id: 'perceivable',
-				text: 'Principle 1: Perceivable - Information and user interface components must be presentable to users in ways they can perceive.',
+				text: 'Information and user interface components must be presentable to users in ways they can perceive.',
 				guidelines: {
 					1: {
 						id: 'text-equiv',
-						text: 'Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
+						text: 'Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html',
 						successCriterions: {
@@ -24,7 +24,7 @@ module.exports = {
 					},
 					2: {
 						id: 'media-equiv',
-						text: 'Guideline 1.2 Time-based Media: Provide alternatives for time-based media.',
+						text: 'Provide alternatives for time-based media.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html',
 						successCriterions: {
@@ -113,7 +113,7 @@ module.exports = {
 					},
 					3: {
 						id: 'content-structure-separation',
-						text: 'Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
+						text: 'Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html',
 						successCriterions: {
@@ -148,7 +148,7 @@ module.exports = {
 					},
 					4: {
 						id: 'visual-audio-contrast',
-						text: 'Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.',
+						text: 'Make it easier for users to see and hear content including separating foreground from background.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html',
 						successCriterions: {
@@ -239,11 +239,11 @@ module.exports = {
 			},
 			2: {
 				id: 'operable',
-				text: 'Principle 2: Operable - User interface components and navigation must be operable.',
+				text: 'User interface components and navigation must be operable.',
 				guidelines: {
 					1: {
 						id: 'keyboard-operation',
-						text: 'Guideline 2.1 Keyboard Accessible: Make all functionality available from a keyboard.',
+						text: 'Make all functionality available from a keyboard.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html',
 						successCriterions: {
@@ -278,7 +278,7 @@ module.exports = {
 					},
 					2: {
 						id: 'time-limits',
-						text: 'Guideline 2.2 Enough Time: Provide users enough time to read and use content.',
+						text: 'Provide users enough time to read and use content.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html',
 						successCriterions: {
@@ -331,7 +331,7 @@ module.exports = {
 					},
 					3: {
 						id: 'seizure',
-						text: 'Guideline 2.3 Seizures: Do not design content in a way that is known to cause seizures.',
+						text: 'Do not design content in a way that is known to cause seizures.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure.html',
 						successCriterions: {
@@ -357,7 +357,7 @@ module.exports = {
 					},
 					4: {
 						id: 'navigation-mechanisms',
-						text: 'Guideline 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.',
+						text: 'Provide ways to help users navigate, find content, and determine where they are.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html',
 						successCriterions: {
@@ -457,11 +457,11 @@ module.exports = {
 			},
 			3: {
 				id: 'understandable',
-				text: 'Principle 3: Understandable - Information and the operation of user interface must be understandable.',
+				text: 'Information and the operation of user interface must be understandable.',
 				guidelines: {
 					1: {
 						id: 'meaning',
-						text: 'Guideline 3.1 Readable: Make text content readable and understandable.',
+						text: 'Make text content readable and understandable.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html',
 						successCriterions: {
@@ -523,7 +523,7 @@ module.exports = {
 					},
 					2: {
 						id: 'consistent-behavior',
-						text: 'Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways.',
+						text: 'Make Web pages appear and operate in predictable ways.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html',
 						successCriterions: {
@@ -576,7 +576,7 @@ module.exports = {
 					},
 					3: {
 						id: 'minimize-error',
-						text: 'Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.',
+						text: ' Help users avoid and correct mistakes.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html',
 						successCriterions: {
@@ -640,11 +640,11 @@ module.exports = {
 			},
 			4: {
 				id: 'robust',
-				text: 'Principle 4: Robust - Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.',
+				text: 'Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.',
 				guidelines: {
 					1: {
 						id: 'ensure-compat',
-						text: 'Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.',
+						text: 'Maximize compatibility with current and future user agents, including assistive technologies.',
 						detailedReference:
 							'http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html',
 						successCriterions: {
@@ -2130,7 +2130,7 @@ module.exports = {
 				guidelines: {
 					1: {
 						id: 'text-alternatives',
-						text: 'Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
+						text: ' Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
 						successCriterions: {
 							1: {
 								id: 'non-text-content',
@@ -2145,7 +2145,7 @@ module.exports = {
 					},
 					2: {
 						id: 'time-based-media',
-						text: 'Guideline 1.2 Time-based Media: Provide alternatives for time-based media.',
+						text: ' Provide alternatives for time-based media.',
 						successCriterions: {
 							1: {
 								id: 'audio-only-and-video-only-prerecorded',
@@ -2232,7 +2232,7 @@ module.exports = {
 					},
 					3: {
 						id: 'adaptable',
-						text: 'Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
+						text: 'Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
 						successCriterions: {
 							1: {
 								id: 'info-and-relationships',
@@ -2292,7 +2292,7 @@ module.exports = {
 					},
 					4: {
 						id: 'distinguishable',
-						text: 'Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.',
+						text: 'Make it easier for users to see and hear content including separating foreground from background.',
 						successCriterions: {
 							1: {
 								id: 'use-of-color',
@@ -2417,11 +2417,11 @@ module.exports = {
 			},
 			2: {
 				id: 'operable',
-				text: '2. Operable: User interface components and navigation must be operable.',
+				text: 'User interface components and navigation must be operable.',
 				guidelines: {
 					1: {
 						id: 'keyboard-accessible',
-						text: 'Guideline 2.1 Keyboard Accessible: Make all functionality available from a keyboard.',
+						text: ' Make all functionality available from a keyboard.',
 						successCriterions: {
 							1: {
 								id: 'keyboard',
@@ -2463,7 +2463,7 @@ module.exports = {
 					},
 					2: {
 						id: 'enough-time',
-						text: 'Guideline 2.2 Enough Time: Provide users enough time to read and use content.',
+						text: ' Provide users enough time to read and use content.',
 						successCriterions: {
 							1: {
 								id: 'timing-adjustable',
@@ -2523,7 +2523,7 @@ module.exports = {
 					},
 					3: {
 						id: 'seizures-and-physical-reactions',
-						text: 'Guideline 2.3 Seizures and Physical Reactions: Do not design content in a way that is known to cause seizures or physical reactions.',
+						text: ' Do not design content in a way that is known to cause seizures or physical reactions.',
 						successCriterions: {
 							1: {
 								id: 'three-flashes-or-below-threshold',
@@ -2556,7 +2556,7 @@ module.exports = {
 					},
 					4: {
 						id: 'navigable',
-						text: 'Guideline 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.',
+						text: 'Provide ways to help users navigate, find content, and determine where they are.',
 						successCriterions: {
 							1: {
 								id: 'bypass-blocks',
@@ -2652,7 +2652,7 @@ module.exports = {
 					},
 					5: {
 						id: 'input-modalities',
-						text: 'Guideline 2.5 Input Modalities: Make it easier for users to operate functionality through various inputs beyond keyboard.',
+						text: ' Make it easier for users to operate functionality through various inputs beyond keyboard.',
 						successCriterions: {
 							1: {
 								id: 'pointer-gestures',
@@ -2714,11 +2714,11 @@ module.exports = {
 			},
 			3: {
 				id: 'understandable',
-				text: '3. Understandable: Information and the operation of user interface must be understandable.',
+				text: 'Information and the operation of user interface must be understandable.',
 				guidelines: {
 					1: {
 						id: 'readable',
-						text: 'Guideline 3.1 Readable: Make text content readable and understandable.',
+						text: 'Make text content readable and understandable.',
 						successCriterions: {
 							1: {
 								id: 'language-of-page',
@@ -2778,7 +2778,7 @@ module.exports = {
 					},
 					2: {
 						id: 'predictable',
-						text: 'Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways.',
+						text: 'Make Web pages appear and operate in predictable ways.',
 						successCriterions: {
 							1: {
 								id: 'on-focus',
@@ -2829,7 +2829,7 @@ module.exports = {
 					},
 					3: {
 						id: 'input-assistance',
-						text: 'Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.',
+						text: 'Help users avoid and correct mistakes.',
 						successCriterions: {
 							1: {
 								id: 'error-identification',
@@ -2891,11 +2891,11 @@ module.exports = {
 			},
 			4: {
 				id: 'robust',
-				text: '4. Robust: Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.',
+				text: 'Content must be robust enough that it can be interpreted by by a wide variety of user agents, including assistive technologies.',
 				guidelines: {
 					1: {
 						id: 'compatible',
-						text: 'Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.',
+						text: 'Maximize compatibility with current and future user agents, including assistive technologies.',
 						successCriterions: {
 							1: {
 								id: 'parsing',
@@ -4414,11 +4414,11 @@ module.exports = {
 		information: {
 			1: {
 				id: 'perceivable',
-				text: '1. Perceivable: Information and user interface components must be presentable to users in ways they can perceive.',
+				text: 'Information and user interface components must be presentable to users in ways they can perceive.',
 				guidelines: {
 					1: {
 						id: 'text-alternatives',
-						text: 'Guideline 1.1 Text Alternatives: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
+						text: 'Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.',
 						successCriterions: {
 							1: {
 								id: 'non-text-content',
@@ -4433,7 +4433,7 @@ module.exports = {
 					},
 					2: {
 						id: 'time-based-media',
-						text: 'Guideline 1.2 Time-based Media: Provide alternatives for time-based media.',
+						text: 'Provide alternatives for time-based media.',
 						successCriterions: {
 							1: {
 								id: 'audio-only-and-video-only-prerecorded',
@@ -4520,7 +4520,7 @@ module.exports = {
 					},
 					3: {
 						id: 'adaptable',
-						text: 'Guideline 1.3 Adaptable: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
+						text: 'Create content that can be presented in different ways (for example simpler layout) without losing information or structure.',
 						successCriterions: {
 							1: {
 								id: 'info-and-relationships',
@@ -4580,7 +4580,7 @@ module.exports = {
 					},
 					4: {
 						id: 'distinguishable',
-						text: 'Guideline 1.4 Distinguishable: Make it easier for users to see and hear content including separating foreground from background.',
+						text: 'Make it easier for users to see and hear content including separating foreground from background.',
 						successCriterions: {
 							1: {
 								id: 'use-of-color',
@@ -4705,11 +4705,11 @@ module.exports = {
 			},
 			2: {
 				id: 'operable',
-				text: '2. Operable: User interface components and navigation must be operable.',
+				text: 'User interface components and navigation must be operable.',
 				guidelines: {
 					1: {
 						id: 'keyboard-accessible',
-						text: 'Guideline 2.1 Keyboard Accessible: Make all functionality available from a keyboard.',
+						text: 'Make all functionality available from a keyboard.',
 						successCriterions: {
 							1: {
 								id: 'keyboard',
@@ -4751,7 +4751,7 @@ module.exports = {
 					},
 					2: {
 						id: 'enough-time',
-						text: 'Guideline 2.2 Enough Time: Provide users enough time to read and use content.',
+						text: 'Provide users enough time to read and use content.',
 						successCriterions: {
 							1: {
 								id: 'timing-adjustable',
@@ -4811,7 +4811,7 @@ module.exports = {
 					},
 					3: {
 						id: 'seizures-and-physical-reactions',
-						text: 'Guideline 2.3 Seizures and Physical Reactions: Do not design content in a way that is known to cause seizures or physical reactions.',
+						text: 'Do not design content in a way that is known to cause seizures or physical reactions.',
 						successCriterions: {
 							1: {
 								id: 'three-flashes-or-below-threshold',
@@ -4844,7 +4844,7 @@ module.exports = {
 					},
 					4: {
 						id: 'navigable',
-						text: 'Guideline 2.4 Navigable: Provide ways to help users navigate, find content, and determine where they are.',
+						text: 'Provide ways to help users navigate, find content, and determine where they are.',
 						successCriterions: {
 							1: {
 								id: 'bypass-blocks',
@@ -4967,7 +4967,7 @@ module.exports = {
 					},
 					5: {
 						id: 'input-modalities',
-						text: 'Guideline 2.5 Input Modalities: Make it easier for users to operate functionality through various inputs beyond keyboard.',
+						text: 'Make it easier for users to operate functionality through various inputs beyond keyboard.',
 						successCriterions: {
 							1: {
 								id: 'pointer-gestures',
@@ -5047,11 +5047,11 @@ module.exports = {
 			},
 			3: {
 				id: 'understandable',
-				text: '3. Understandable: Information and the operation of the user interface must be understandable.',
+				text: 'Information and the operation of the user interface must be understandable.',
 				guidelines: {
 					1: {
 						id: 'readable',
-						text: 'Guideline 3.1 Readable: Make text content readable and understandable.',
+						text: 'Make text content readable and understandable.',
 						successCriterions: {
 							1: {
 								id: 'language-of-page',
@@ -5111,7 +5111,7 @@ module.exports = {
 					},
 					2: {
 						id: 'predictable',
-						text: 'Guideline 3.2 Predictable: Make Web pages appear and operate in predictable ways.',
+						text: 'Make Web pages appear and operate in predictable ways.',
 						successCriterions: {
 							1: {
 								id: 'on-focus',
@@ -5180,7 +5180,7 @@ module.exports = {
 					},
 					3: {
 						id: 'input-assistance',
-						text: 'Guideline 3.3 Input Assistance: Help users avoid and correct mistakes.',
+						text: 'Help users avoid and correct mistakes.',
 						successCriterions: {
 							1: {
 								id: 'error-identification',
@@ -5260,11 +5260,11 @@ module.exports = {
 			},
 			4: {
 				id: 'robust',
-				text: '4. Robust: Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.',
+				text: 'Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.',
 				guidelines: {
 					1: {
 						id: 'compatible',
-						text: 'Guideline 4.1 Compatible: Maximize compatibility with current and future user agents, including assistive technologies.',
+						text: 'Maximize compatibility with current and future user agents, including assistive technologies.',
 						successCriterions: {
 							1: {
 								id: 'parsing',
