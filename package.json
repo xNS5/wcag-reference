@@ -1,6 +1,6 @@
 {
 	"name": "wcag-reference-cjs",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Gets a reference to a WCAG Success Criteria -- this time in CommonJS!",
 	"exports": "./index.js",
 	"repository": "xNS5/wcag-reference-cjs",
@@ -37,7 +37,7 @@
 	"files": [
 		"index.js",
 		"index.d.ts",
-		"data/data.js"
+      "data/helper/data.js"
 	],
 	"engines": {
 		"node": ">=12"

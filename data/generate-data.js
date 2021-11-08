@@ -1,9 +1,9 @@
-import { writeFile } from 'node:fs/promises';
-import { ESLint } from 'eslint';
+const {writeFile} = require('node:fs/promises');
+const {ESLint} = require('eslint');
 
-import { getWcag20information, getWcag20Techniques } from './wcag20.js';
-import { getWcag21information, getWcag21Techniques } from './wcag21.js';
-import { getWcag22information, getWcag22Techniques } from './wcag22.js';
+const {getWcag20information, getWcag20Techniques} = require('./wcag20.js');
+const {getWcag21information, getWcag21Techniques} = require('./wcag21.js');
+const {getWcag22information, getWcag22Techniques} = require('./wcag22.js');
 
 /**
  * Generates the data used by this library.
@@ -24,7 +24,7 @@ async function generateData() {
 		},
 	};
 
-	const eslint = new ESLint({ fix: true });
+	const eslint = new ESLint({fix: true});
 
 	await writeFile(
 		'./data/data.js',
@@ -32,7 +32,7 @@ async function generateData() {
 	)
 		// fix all style problems
 		.then(() => eslint.lintFiles('./data/data.js'))
-		.then((fixes) => ESLint.outputFixes(fixes))
+		.then(fixes => ESLint.outputFixes(fixes))
 		.catch(console.error);
 }
 

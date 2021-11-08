@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "parserOptions": {
+	"ecmaVersion": 2020
+  },
+  "extends": [
+	"xo"
+  ],
+  "rules": {
+	"comma-dangle": ["error", "only-multiline"],
+	"capitalized-comments": [
+	  "error",
+	  "always",
+	  {
+		"line": {
+		  "ignorePattern": ".*"
+		},
+		"block": {
+		  "ignoreInlineComments": true,
+		  "ignoreConsecutiveComments": true
+		}
+	  }
+	]
+  }
+}
