@@ -1,9 +1,9 @@
-const information = require('./data/helper/data.js');
+const information = require('./data/data.js');
 
 const versionMappings = {
 	'2.0': 'wcag20',
-	'2.1': 'wcag21',
-	'2.2': 'wcag22',
+	2.1: 'wcag21',
+	2.2: 'wcag22',
 };
 
 /**
@@ -34,24 +34,24 @@ const versionMappings = {
  */
 const getCriterionData = (version, chapter, section, subsection) => {
 	if (!versionMappings[version]) {
-		throw new Error("Requested WCAG Version isn't valid!");
+		throw new Error('Requested WCAG Version isn\'t valid!');
 	}
 
 	if (!information[versionMappings[version]].information[chapter]) {
-		throw new Error("Requested chapter doesn't exist!");
+		throw new Error('Requested chapter doesn\'t exist!');
 	}
 
-	if (!information[versionMappings[version]].information[chapter].guidelines[section]){
-		throw new Error("Requested section doesn't exist!");
+	if (!information[versionMappings[version]].information[chapter].guidelines[section]) {
+		throw new Error('Requested section doesn\'t exist!');
 	}
 
 	if (!information[versionMappings[version]].information[chapter].guidelines[section].successCriterions[subsection]) {
-		throw new Error("Requested subsection doesn't exist!");
+		throw new Error('Requested subsection doesn\'t exist!');
 	}
 
 	return Object.assign(
 		information[versionMappings[version]].information[chapter].guidelines[section].successCriterions[subsection],
-		{ wcagUrl: information[versionMappings[version]].information.url }
+		{wcagUrl: information[versionMappings[version]].information.url}
 	);
 };
 
@@ -85,7 +85,6 @@ const getLinkToCriterion = (version, chapter, section, subsection) => {
 	return criterionData.wcagUrl + '#' + criterionData.id;
 };
 
-
 /**
  * Returns a list of success criterion based on their violation level (e.g. 1, 2, or 3)
  * @throws When the success criterion not exist.
@@ -94,25 +93,27 @@ const getLinkToCriterion = (version, chapter, section, subsection) => {
  * @returns {array} List of success criterion that meet the desired level
  */
 const getCriterionByLevel = (version, level) => {
-	let list = [];
+	const list = [];
 	if (!versionMappings[version]) {
-		throw new Error("Requested WCAG Version isn't valid!");
+		throw new Error('Requested WCAG Version isn\'t valid!');
 	}
-	let data = information[versionMappings[version]].information
-	for(let chapter in data){
+
+	const data = information[versionMappings[version]].information;
+	for (const chapter in data) {
 		const sections = data[chapter].guidelines;
-		for(let section in sections){
+		for (const section in sections) {
 			const subsection = sections[section].successCriterions;
-			for(let criterion in subsection){
-				let subsection_level = subsection[criterion].level;
-				if(subsection_level === level){
+			for (const criterion in subsection) {
+				const subsection_level = subsection[criterion].level;
+				if (subsection_level === level) {
 					list.push(subsection[criterion]);
 				}
 			}
 		}
 	}
+
 	return list;
-}
+};
 
 /**
  * Returns all the available data for the specified technique or throws an
@@ -145,22 +146,22 @@ const getCriterionByLevel = (version, level) => {
  */
 const getTechniqueData = (version, technique) => {
 	if (!versionMappings[version]) {
-		throw new Error("Requested WCAG Version isn't valid!");
+		throw new Error('Requested WCAG Version isn\'t valid!');
 	}
 
 	// get the technique prefix ex. 'ARIA12' → 'ARIA'
 	const prefix = technique.replace(/\d*/g, '');
 
 	// checks if the requested technique exists
-	if (!information[versionMappings[version]].techniques[prefix] || !information[versionMappings[version]].techniques[prefix].techniques[technique]){
-		throw new Error("Requested WCAG technique doesn't exist!");
+	if (!information[versionMappings[version]].techniques[prefix] || !information[versionMappings[version]].techniques[prefix].techniques[technique]) {
+		throw new Error('Requested WCAG technique doesn\'t exist!');
 	}
 
 	return Object.assign(information[versionMappings[version]].techniques[prefix].techniques[technique], {
-			techniquesUrl: information[versionMappings[version]].techniques.url,
-			groupId: information[versionMappings[version]].techniques[prefix].id,
-			groupPage: information[versionMappings[version]].techniques[prefix].onePage,
-		}
+		techniquesUrl: information[versionMappings[version]].techniques.url,
+		groupId: information[versionMappings[version]].techniques[prefix].id,
+		groupPage: information[versionMappings[version]].techniques[prefix].onePage,
+	}
 	);
 };
 
@@ -190,7 +191,8 @@ const getLinkToTechnique = (version, technique) => {
 	if (version !== '2.0') {
 		section = techniqueData.groupId + '/';
 	}
-		// we don't need ".html" for 2.1 & 2.2 but it works so no switch needed
+
+	// we don't need ".html" for 2.1 & 2.2 but it works so no switch needed
 	return (techniqueData.techniquesUrl + section + technique + '.html'
 	);
 };
