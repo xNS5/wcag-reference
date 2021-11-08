@@ -1,23 +1,23 @@
-import { JSDOM } from 'jsdom';
-import got from 'got';
+const {JSDOM} = require('jsdom');
+const got = require('got');
 
-import mergeHeading from './helper/merge-heading.js';
-import getSuccessCriterionText from './helper/get-success-criterion-text.js';
-import getInnerText from './helper/get-inner-text.js';
+const {mergeHeading} = require('./helper/merge-heading.js');
+const {getSuccessCriterionText} = require('./helper/get-success-criterion-text.js');
+const {getInnerText, getDescription} = require('./helper/get-inner-text.js');
 
 /**
- * Extracts all needed information from https://www.w3.org/TR/WCAG21/
+ * Extracts all needed information = require( https://www.w3.org/TR/WCAG21/
  *
  * @returns {Object}
  */
-export async function getWcag21information() {
+async function getWcag21information() {
 	const url = 'https://www.w3.org/TR/WCAG21/';
 	const html = (await got(url)).body;
 	const {
-		window: { document },
+		window: {document},
 	} = new JSDOM(html);
 
-	const information = { url };
+	const information = {url};
 
 	for (const principleContainer of document.querySelectorAll('.principle')) {
 		// principle
@@ -44,6 +44,7 @@ export async function getWcag21information() {
 				successCriterion.id = successCriterionNode.id;
 				successCriterion.handle =
 					getSuccessCriterionText(successCriterionNode);
+				successCriterion.description = getDescription(successCriterionNode);
 				successCriterion.quickReference =
 					successCriterionNode.querySelector(
 						'a[href*="WCAG21/quickref"]'
@@ -82,20 +83,20 @@ export async function getWcag21information() {
 }
 
 /**
- * Parses information about wcag 2.1 techniques from
+ * Parses information about wcag 2.1 techniques = require(
  * https://www.w3.org/WAI/WCAG21/Techniques/
  *
  * @returns {Object}
  */
-export async function getWcag21Techniques() {
+async function getWcag21Techniques() {
 	const url = 'https://www.w3.org/WAI/WCAG21/Techniques/';
 	const html = (await got(url)).body;
 	const {
-		window: { document },
+		window: {document},
 	} = new JSDOM(html);
 
 	// groups
-	const techniqueGroups = { url };
+	const techniqueGroups = {url};
 
 	for (const techniqueGroupHeading of document.querySelectorAll('#toc h3')) {
 		const techniqueList = techniqueGroupHeading.nextElementSibling;
@@ -134,3 +135,8 @@ export async function getWcag21Techniques() {
 
 	return techniqueGroups;
 }
+
+module.exports = {
+	getWcag21information,
+	getWcag21Techniques
+};

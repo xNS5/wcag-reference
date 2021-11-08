@@ -1,19 +1,20 @@
-import { JSDOM } from 'jsdom';
-import got from 'got';
+const {JSDOM} = require('jsdom');
+const got = require('got');
 
-import getInnerText from './helper/get-inner-text.js';
+const {getInnerText} = require('./helper/get-inner-text.js');
+const {getDescription} = require('./helper/get-inner-text');
 
 /**
  * Extracts all needed information from https://www.w3.org/TR/WCAG20/
  *
  * @returns {Object}
  */
-export async function getWcag20information() {
+async function getWcag20information() {
 	const url = 'https://www.w3.org/TR/WCAG20/';
 	const html = (await got(url)).body;
-	const { window: { document }, } = new JSDOM(html);
+	const {window: {document}} = new JSDOM(html);
 
-	const information = { url };
+	const information = {url};
 
 	for (const node of document.querySelectorAll('.principle')) {
 		const principleContainer = node.parentElement;
@@ -35,12 +36,12 @@ export async function getWcag20information() {
 				guidelineNode.querySelector('a[href*="w3.org"]').href;
 			// success criterion
 			guideline.successCriterions = {};
-
 			for (const successCriterionNode of guidelineContainer.querySelectorAll('.sc')) {
 				const successCriterion = {};
 				successCriterion.id = successCriterionNode.id;
 				successCriterion.handle = getInnerText(successCriterionNode
 					.querySelector('.sc-handle')).replace(':', '');
+				successCriterion.description = getDescription(successCriterionNode);
 				successCriterion.quickReference = successCriterionNode
 					.querySelector('a[href*="quickref"]').href;
 				successCriterion.detailedReference = successCriterionNode
@@ -50,7 +51,7 @@ export async function getWcag20information() {
 					.textContent.match(/Level (?<level>A{1,3})/)
 					.groups.level.split('').length;
 
-				guideline.successCriterions[ successCriterion.handle.match(/^\d\.\d\.(?<number>\d+)/).groups.number ] = successCriterion;
+				guideline.successCriterions[successCriterion.handle.match(/^\d\.\d\.(?<number>\d+)/).groups.number] = successCriterion;
 			}
 
 			principle.guidelines[
@@ -74,15 +75,15 @@ export async function getWcag20information() {
  *
  * @returns {Object}
  */
-export async function getWcag20Techniques() {
+async function getWcag20Techniques() {
 	const url = 'https://www.w3.org/TR/WCAG20-TECHS/';
 	const html = (await got(url)).body;
 	const {
-		window: { document },
+		window: {document},
 	} = new JSDOM(html);
 
 	// groups
-	const techniqueGroups = { url };
+	const techniqueGroups = {url};
 
 	for (const node of document.querySelectorAll('.toc li > ul')) {
 		const techniqueGroupElement = node.parentElement;
@@ -118,3 +119,8 @@ export async function getWcag20Techniques() {
 
 	return techniqueGroups;
 }
+
+module.exports = {
+	getWcag20information,
+	getWcag20Techniques
+};

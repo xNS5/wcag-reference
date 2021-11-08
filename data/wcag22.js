@@ -1,22 +1,22 @@
-import { JSDOM } from 'jsdom';
-import got from 'got';
+const {JSDOM} = require('jsdom');
+const got = require('got');
 
-import getSuccessCriterionText from './helper/get-success-criterion-text.js';
-import getInnerText from './helper/get-inner-text.js';
+const {getSuccessCriterionText} = require('./helper/get-success-criterion-text.js');
+const {getInnerText, getDescription} = require('./helper/get-inner-text.js');
 
 /**
  * Extracts all needed information from https://www.w3.org/TR/WCAG22/
  *
  * @returns {Object}
  */
-export async function getWcag22information() {
+async function getWcag22information() {
 	const url = 'https://www.w3.org/TR/WCAG22/';
 	const html = (await got(url)).body;
 	const {
-		window: { document },
+		window: {document},
 	} = new JSDOM(html);
 
-	const wcag20 = { url };
+	const wcag20 = {url};
 
 	for (const principleContainer of document.querySelectorAll('.principle')) {
 		// principle
@@ -50,6 +50,7 @@ export async function getWcag22information() {
 				successCriterion.id = successCriterionNode.id;
 				successCriterion.handle =
 					getSuccessCriterionText(successCriterionNode);
+				successCriterion.description = getDescription(successCriterionNode);
 				successCriterion.quickReference =
 					'https://www.w3.org/WAI/WCAG22/quickref/#' +
 					successCriterionNode.id;
@@ -91,15 +92,15 @@ export async function getWcag22information() {
  *
  * @returns {Object}
  */
-export async function getWcag22Techniques() {
+async function getWcag22Techniques() {
 	const url = 'https://www.w3.org/WAI/WCAG22/Techniques/';
 	const html = (await got(url)).body;
 	const {
-		window: { document },
+		window: {document},
 	} = new JSDOM(html);
 
 	// groups
-	const techniqueGroups = { url };
+	const techniqueGroups = {url};
 
 	for (const techniqueGroupHeading of document.querySelectorAll('#toc h3')) {
 		const techniqueList = techniqueGroupHeading.nextElementSibling;
@@ -138,3 +139,9 @@ export async function getWcag22Techniques() {
 
 	return techniqueGroups;
 }
+
+module.exports = {
+	getWcag22information,
+	getWcag22Techniques
+};
+

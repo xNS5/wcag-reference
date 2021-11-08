@@ -1,4 +1,4 @@
-const information = require('./data/data.js');
+const information = require('./data/helper/data.js');
 
 const versionMappings = {
 	'2.0': 'wcag20',

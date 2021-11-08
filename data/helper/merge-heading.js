@@ -1,4 +1,4 @@
-import getInnerText from './get-inner-text.js';
+const {getInnerText} = require('./get-inner-text.js');
 
 /**
  * Merges the text content of the heading with the paragraph underneath.
@@ -8,7 +8,7 @@ import getInnerText from './get-inner-text.js';
  * @param {string} paragraphQuery query string for the paragraph
  * @returns {string}
  */
-export default function mergeHeading(
+function mergeHeading(
 	containerNode,
 	headingQuery,
 	paragraphQuery
@@ -19,4 +19,8 @@ export default function mergeHeading(
 			': '
 		) + getInnerText(containerNode.querySelector(paragraphQuery))
 	);
+}
+
+module.exports = {
+	mergeHeading
 }

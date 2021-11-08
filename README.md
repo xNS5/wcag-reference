@@ -78,14 +78,14 @@ getCriterionByLevel(version, level)
 import { getCriterionByLevel } from 'wcag-reference';
 
 const link = getCriterionByLevel('2.2', 3);
-// → '{
+// → {
 //  id: 'sign-language-prerecorded',
 // 	handle: '1.2.6 Sign Language (Prerecorded)',
 // 	quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#sign-language-prerecorded',
 // 	detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded.html',
 // 	level: 3
 // },
-// {...}'
+// {...}
 ```
 
 
