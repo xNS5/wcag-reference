@@ -2,7 +2,8 @@ const {JSDOM} = require('jsdom');
 const got = require('got');
 
 const {getSuccessCriterionText} = require('./helper/get-success-criterion-text.js');
-const {getInnerText, getDescription} = require('./helper/get-inner-text.js');
+const {getInnerText} = require('./helper/get-inner-text.js');
+const {getDescription} = require('./helper/get-wcag-description.js');
 
 /**
  * Extracts all needed information from https://www.w3.org/TR/WCAG22/
@@ -50,7 +51,7 @@ async function getWcag22information() {
 				successCriterion.id = successCriterionNode.id;
 				successCriterion.handle =
 					getSuccessCriterionText(successCriterionNode);
-				successCriterion.description = getDescription(successCriterionNode);
+				successCriterion.description = getDescription(successCriterionNode, 2);
 				successCriterion.quickReference =
 					'https://www.w3.org/WAI/WCAG22/quickref/#' +
 					successCriterionNode.id;

@@ -3,10 +3,11 @@ const got = require('got');
 
 const {mergeHeading} = require('./helper/merge-heading.js');
 const {getSuccessCriterionText} = require('./helper/get-success-criterion-text.js');
-const {getInnerText, getDescription} = require('./helper/get-inner-text.js');
+const {getInnerText} = require('./helper/get-inner-text.js');
+const {getDescription} = require('./helper/get-wcag-description.js');
 
 /**
- * Extracts all needed information = require( https://www.w3.org/TR/WCAG21/
+ * Extracts all needed information from https://www.w3.org/TR/WCAG21/
  *
  * @returns {Object}
  */
@@ -44,7 +45,7 @@ async function getWcag21information() {
 				successCriterion.id = successCriterionNode.id;
 				successCriterion.handle =
 					getSuccessCriterionText(successCriterionNode);
-				successCriterion.description = getDescription(successCriterionNode);
+				successCriterion.description = getDescription(successCriterionNode, 1);
 				successCriterion.quickReference =
 					successCriterionNode.querySelector(
 						'a[href*="WCAG21/quickref"]'

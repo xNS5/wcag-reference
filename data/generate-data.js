@@ -27,11 +27,11 @@ async function generateData() {
 	const eslint = new ESLint({fix: true});
 
 	await writeFile(
-		'./data/data.js',
+		'./data.js',
 		'export default ' + JSON.stringify(data, undefined, '\t') + ';'
 	)
 		// fix all style problems
-		.then(() => eslint.lintFiles('./data/data.js'))
+		.then(() => eslint.lintFiles('./data.js'))
 		.then(fixes => ESLint.outputFixes(fixes))
 		.catch(console.error);
 }

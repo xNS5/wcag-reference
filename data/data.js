@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	wcag20: {
 		information: {
 			1: {
@@ -13,7 +13,7 @@ module.exports = {
 							1: {
 								id: 'text-equiv-all',
 								handle: '1.1.1 Non-text Content',
-								description: ' All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.  Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.) Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.) Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content. Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content. CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.',
+								description: 'All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.  Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.) Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.) Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content. Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content. CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-text-equiv-all',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html',
 								level: 1
@@ -28,7 +28,7 @@ module.exports = {
 							1: {
 								id: 'media-equiv-av-only-alt',
 								handle: '1.2.1 Audio-only and Video-only (Prerecorded)',
-								description: ' For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:  Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
+								description: 'For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:  Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html',
 								level: 1
@@ -36,7 +36,7 @@ module.exports = {
 							2: {
 								id: 'media-equiv-captions',
 								handle: '1.2.2 Captions (Prerecorded)',
-								description: ' Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. ',
+								description: 'Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html',
 								level: 1
@@ -44,7 +44,7 @@ module.exports = {
 							3: {
 								id: 'media-equiv-audio-desc',
 								handle: '1.2.3 Audio Description or Media Alternative (Prerecorded)',
-								description: ' An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. ',
+								description: 'An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html',
 								level: 1
@@ -52,7 +52,7 @@ module.exports = {
 							4: {
 								id: 'media-equiv-real-time-captions',
 								handle: '1.2.4 Captions (Live)',
-								description: ' Captions are provided for all live audio content in synchronized media. ',
+								description: 'Captions are provided for all live audio content in synchronized media.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html',
 								level: 2
@@ -60,7 +60,7 @@ module.exports = {
 							5: {
 								id: 'media-equiv-audio-desc-only',
 								handle: '1.2.5 Audio Description (Prerecorded)',
-								description: ' Audio description is provided for all prerecorded video content in synchronized media. ',
+								description: 'Audio description is provided for all prerecorded video content in synchronized media.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc-only',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html',
 								level: 2
@@ -68,7 +68,7 @@ module.exports = {
 							6: {
 								id: 'media-equiv-sign',
 								handle: '1.2.6 Sign Language (Prerecorded)',
-								description: ' Sign language interpretation is provided for all prerecorded audio content in synchronized media. ',
+								description: 'Sign language interpretation is provided for all prerecorded audio content in synchronized media.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-sign',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html',
 								level: 3
@@ -76,7 +76,7 @@ module.exports = {
 							7: {
 								id: 'media-equiv-extended-ad',
 								handle: '1.2.7 Extended Audio Description (Prerecorded)',
-								description: ' Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media. ',
+								description: 'Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-extended-ad',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html',
 								level: 3
@@ -84,7 +84,7 @@ module.exports = {
 							8: {
 								id: 'media-equiv-text-doc',
 								handle: '1.2.8 Media Alternative (Prerecorded)',
-								description: ' An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media. ',
+								description: 'An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-text-doc',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html',
 								level: 3
@@ -92,7 +92,7 @@ module.exports = {
 							9: {
 								id: 'media-equiv-live-audio-only',
 								handle: '1.2.9 Audio-only (Live)',
-								description: ' An alternative for time-based media that presents equivalent information for live audio-only content is provided. ',
+								description: 'An alternative for time-based media that presents equivalent information for live audio-only content is provided.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-live-audio-only',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html',
 								level: 3
@@ -107,7 +107,7 @@ module.exports = {
 							1: {
 								id: 'content-structure-separation-programmatic',
 								handle: '1.3.1 Info and Relationships',
-								description: ' Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. ',
+								description: 'Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html',
 								level: 1
@@ -115,7 +115,7 @@ module.exports = {
 							2: {
 								id: 'content-structure-separation-sequence',
 								handle: '1.3.2 Meaningful Sequence',
-								description: ' When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. ',
+								description: 'When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-sequence',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html',
 								level: 1
@@ -123,7 +123,7 @@ module.exports = {
 							3: {
 								id: 'content-structure-separation-understanding',
 								handle: '1.3.3 Sensory Characteristics',
-								description: ' Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.  Note: For requirements related to color, refer to Guideline 1.4.',
+								description: 'Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.   Note: : For requirements related to color, refer to Guideline 1.4.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html',
 								level: 1
@@ -138,7 +138,7 @@ module.exports = {
 							1: {
 								id: 'visual-audio-contrast-without-color',
 								handle: '1.4.1 Use of Color',
-								description: ' Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.  Note: This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.',
+								description: 'Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.   Note: : This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-without-color',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html',
 								level: 1
@@ -146,7 +146,7 @@ module.exports = {
 							2: {
 								id: 'visual-audio-contrast-dis-audio',
 								handle: '1.4.2 Audio Control',
-								description: ' If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.  Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
+								description: 'If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.   Note: : Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-dis-audio',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html',
 								level: 1
@@ -154,7 +154,7 @@ module.exports = {
 							3: {
 								id: 'visual-audio-contrast-contrast',
 								handle: '1.4.3 Contrast (Minimum)',
-								description: ' The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:  Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.',
+								description: 'The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:  Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-contrast',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html',
 								level: 2
@@ -162,7 +162,7 @@ module.exports = {
 							4: {
 								id: 'visual-audio-contrast-scale',
 								handle: '1.4.4 Resize text',
-								description: ' Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. ',
+								description: 'Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-scale',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html',
 								level: 2
@@ -170,7 +170,7 @@ module.exports = {
 							5: {
 								id: 'visual-audio-contrast-text-presentation',
 								handle: '1.4.5 Images of Text',
-								description: ' If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:  Customizable: The image of text can be visually customized to the user\'s requirements; Essential: A particular presentation of text is essential to the information being conveyed.Note: Logotypes (text that is part of a logo or brand name) are considered essential.',
+								description: 'If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:  Customizable: The image of text can be visually customized to the user\'s requirements; Essential: A particular presentation of text is essential to the information being conveyed. Note: : Logotypes (text that is part of a logo or brand name) are considered essential.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html',
 								level: 2
@@ -178,7 +178,7 @@ module.exports = {
 							6: {
 								id: 'visual-audio-contrast7',
 								handle: '1.4.6 Contrast (Enhanced)',
-								description: ' The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:  Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.',
+								description: 'The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:  Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no minimum contrast requirement.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast7',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html',
 								level: 3
@@ -186,7 +186,7 @@ module.exports = {
 							7: {
 								id: 'visual-audio-contrast-noaudio',
 								handle: '1.4.7 Low or No Background Audio',
-								description: ' For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:  No Background: The audio does not contain background sounds.Turn Off: The background sounds can be turned off.20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.Note: Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.',
+								description: 'For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:  No Background: The audio does not contain background sounds.Turn Off: The background sounds can be turned off.20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds. Note: : Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-noaudio',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html',
 								level: 3
@@ -194,7 +194,7 @@ module.exports = {
 							8: {
 								id: 'visual-audio-contrast-visual-presentation',
 								handle: '1.4.8 Visual Presentation',
-								description: ' For the visual presentation of blocks of text, a mechanism is available to achieve the following:  Foreground and background colors can be selected by the user.Width is no more than 80 characters or glyphs (40 if CJK).Text is not justified (aligned to both the left and the right margins).Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
+								description: 'For the visual presentation of blocks of text, a mechanism is available to achieve the following:  Foreground and background colors can be selected by the user.Width is no more than 80 characters or glyphs (40 if CJK).Text is not justified (aligned to both the left and the right margins).Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-visual-presentation',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-visual-presentation.html',
 								level: 3
@@ -202,7 +202,7 @@ module.exports = {
 							9: {
 								id: 'visual-audio-contrast-text-images',
 								handle: '1.4.9 Images of Text (No Exception)',
-								description: ' Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.  Note: Logotypes (text that is part of a logo or brand name) are considered essential.',
+								description: 'Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.   Note: : Logotypes (text that is part of a logo or brand name) are considered essential.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-images',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html',
 								level: 3
@@ -223,7 +223,7 @@ module.exports = {
 							1: {
 								id: 'keyboard-operation-keyboard-operable',
 								handle: '2.1.1 Keyboard',
-								description: ' All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints.  Note 1: This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not.Note 2: This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.',
+								description: 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints.   Note:  1: This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not. Note:  2: This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-keyboard-operable',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html',
 								level: 1
@@ -231,7 +231,7 @@ module.exports = {
 							2: {
 								id: 'keyboard-operation-trapping',
 								handle: '2.1.2 No Keyboard Trap',
-								description: ' If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.  Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
+								description: 'If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.   Note: : Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-trapping',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html',
 								level: 1
@@ -239,7 +239,7 @@ module.exports = {
 							3: {
 								id: 'keyboard-operation-all-funcs',
 								handle: '2.1.3 Keyboard (No Exception)',
-								description: ' All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. ',
+								description: 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-keyboard-operation-all-funcs',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html',
 								level: 3
@@ -254,7 +254,7 @@ module.exports = {
 							1: {
 								id: 'time-limits-required-behaviors',
 								handle: '2.2.1 Timing Adjustable',
-								description: ' For each time limit that is set by the content, at least one of the following is true:  Turn off: The user is allowed to turn off the time limit before encountering it; or Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or Essential Exception: The time limit is essential and extending it would invalidate the activity; or 20 Hour Exception: The time limit is longer than 20 hours. Note: This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action.',
+								description: 'For each time limit that is set by the content, at least one of the following is true:  Turn off: The user is allowed to turn off the time limit before encountering it; or Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or Essential Exception: The time limit is essential and extending it would invalidate the activity; or 20 Hour Exception: The time limit is longer than 20 hours.  Note: : This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-required-behaviors',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html',
 								level: 1
@@ -262,7 +262,7 @@ module.exports = {
 							2: {
 								id: 'time-limits-pause',
 								handle: '2.2.2 Pause, Stop, Hide',
-								description: ' For moving, blinking, scrolling, or auto-updating information, all of the following are true:  Moving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; andAuto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.Note 1: For requirements related to flickering or flashing content, refer to Guideline 2.3.Note 2: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.Note 3: Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so. Note 4: An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.',
+								description: '2.2.2 Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, all of the following are true:  Moving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; andAuto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential. Note:  1: For requirements related to flickering or flashing content, refer to Guideline 2.3. Note:  2: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. Note:  3: Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.  Note:  4: An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-pause',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html',
 								level: 1
@@ -270,7 +270,7 @@ module.exports = {
 							3: {
 								id: 'time-limits-no-exceptions',
 								handle: '2.2.3 No Timing',
-								description: ' Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events. ',
+								description: 'Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-no-exceptions',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html',
 								level: 3
@@ -278,7 +278,7 @@ module.exports = {
 							4: {
 								id: 'time-limits-postponed',
 								handle: '2.2.4 Interruptions',
-								description: ' Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency. ',
+								description: 'Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-postponed',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html',
 								level: 3
@@ -286,7 +286,7 @@ module.exports = {
 							5: {
 								id: 'time-limits-server-timeout',
 								handle: '2.2.5 Re-authenticating',
-								description: ' When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating. ',
+								description: 'When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-time-limits-server-timeout',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html',
 								level: 3
@@ -301,7 +301,7 @@ module.exports = {
 							1: {
 								id: 'seizure-does-not-violate',
 								handle: '2.3.1 Three Flashes or Below Threshold',
-								description: ' Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.  Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
+								description: 'Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.   Note: : Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-does-not-violate',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html',
 								level: 1
@@ -309,7 +309,7 @@ module.exports = {
 							2: {
 								id: 'seizure-three-times',
 								handle: '2.3.2 Three Flashes',
-								description: ' Web pages do not contain anything that flashes more than three times in any one second period. ',
+								description: 'Web pages do not contain anything that flashes more than three times in any one second period.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-seizure-three-times',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html',
 								level: 3
@@ -324,7 +324,7 @@ module.exports = {
 							1: {
 								id: 'navigation-mechanisms-skip',
 								handle: '2.4.1 Bypass Blocks',
-								description: ' A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. ',
+								description: 'A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-skip',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html',
 								level: 1
@@ -332,7 +332,7 @@ module.exports = {
 							2: {
 								id: 'navigation-mechanisms-title',
 								handle: '2.4.2 Page Titled',
-								description: ' Web pages have titles that describe topic or purpose. ',
+								description: 'Web pages have titles that describe topic or purpose.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html',
 								level: 1
@@ -340,7 +340,7 @@ module.exports = {
 							3: {
 								id: 'navigation-mechanisms-focus-order',
 								handle: '2.4.3 Focus Order',
-								description: ' If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. ',
+								description: 'If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html',
 								level: 1
@@ -348,7 +348,7 @@ module.exports = {
 							4: {
 								id: 'navigation-mechanisms-refs',
 								handle: '2.4.4 Link Purpose (In Context)',
-								description: ' The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. ',
+								description: 'The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html',
 								level: 1
@@ -356,7 +356,7 @@ module.exports = {
 							5: {
 								id: 'navigation-mechanisms-mult-loc',
 								handle: '2.4.5 Multiple Ways',
-								description: ' More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. ',
+								description: 'More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html',
 								level: 2
@@ -364,7 +364,7 @@ module.exports = {
 							6: {
 								id: 'navigation-mechanisms-descriptive',
 								handle: '2.4.6 Headings and Labels',
-								description: ' Headings and labels describe topic or purpose. ',
+								description: 'Headings and labels describe topic or purpose.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-descriptive',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html',
 								level: 2
@@ -372,7 +372,7 @@ module.exports = {
 							7: {
 								id: 'navigation-mechanisms-focus-visible',
 								handle: '2.4.7 Focus Visible',
-								description: ' Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. ',
+								description: 'Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html',
 								level: 2
@@ -380,7 +380,7 @@ module.exports = {
 							8: {
 								id: 'navigation-mechanisms-location',
 								handle: '2.4.8 Location',
-								description: ' Information about the user\'s location within a set of Web pages is available. ',
+								description: 'Information about the user\'s location within a set of Web pages is available.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html',
 								level: 3
@@ -388,7 +388,7 @@ module.exports = {
 							9: {
 								id: 'navigation-mechanisms-link',
 								handle: '2.4.9 Link Purpose (Link Only)',
-								description: ' A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. ',
+								description: 'A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-link',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html',
 								level: 3
@@ -396,7 +396,7 @@ module.exports = {
 							10: {
 								id: 'navigation-mechanisms-headings',
 								handle: '2.4.10 Section Headings',
-								description: ' Section headings are used to organize the content.  Note 1: "Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content. Note 2: This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2.How to Meet 2.4.10 | Understanding 2.4.10',
+								description: '2.4.10 Section Headings: Section headings are used to organize the content.   Note:  1: "Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content.  Note:  2: This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2.How to Meet 2.4.10 | Understanding 2.4.10',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-headings',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html',
 								level: 3
@@ -417,7 +417,7 @@ module.exports = {
 							1: {
 								id: 'meaning-doc-lang-id',
 								handle: '3.1.1 Language of Page',
-								description: ' The default human language of each Web page can be programmatically determined. ',
+								description: 'The default human language of each Web page can be programmatically determined.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html',
 								level: 1
@@ -425,7 +425,7 @@ module.exports = {
 							2: {
 								id: 'meaning-other-lang-id',
 								handle: '3.1.2 Language of Parts',
-								description: ' The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text. ',
+								description: 'The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-other-lang-id',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html',
 								level: 2
@@ -433,7 +433,7 @@ module.exports = {
 							3: {
 								id: 'meaning-idioms',
 								handle: '3.1.3 Unusual Words',
-								description: ' A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon. ',
+								description: 'A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-idioms',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html',
 								level: 3
@@ -441,7 +441,7 @@ module.exports = {
 							4: {
 								id: 'meaning-located',
 								handle: '3.1.4 Abbreviations',
-								description: ' A mechanism for identifying the expanded form or meaning of abbreviations is available. ',
+								description: 'A mechanism for identifying the expanded form or meaning of abbreviations is available.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-located',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html',
 								level: 3
@@ -449,7 +449,7 @@ module.exports = {
 							5: {
 								id: 'meaning-supplements',
 								handle: '3.1.5 Reading Level',
-								description: ' When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available. ',
+								description: 'When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-supplements',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html',
 								level: 3
@@ -457,7 +457,7 @@ module.exports = {
 							6: {
 								id: 'meaning-pronunciation',
 								handle: '3.1.6 Pronunciation',
-								description: ' A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation. ',
+								description: 'A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-pronunciation',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html',
 								level: 3
@@ -472,7 +472,7 @@ module.exports = {
 							1: {
 								id: 'consistent-behavior-receive-focus',
 								handle: '3.2.1 On Focus',
-								description: ' When any component receives focus, it does not initiate a change of context. ',
+								description: 'When any component receives focus, it does not initiate a change of context.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-receive-focus',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html',
 								level: 1
@@ -480,7 +480,7 @@ module.exports = {
 							2: {
 								id: 'consistent-behavior-unpredictable-change',
 								handle: '3.2.2 On Input',
-								description: ' Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component. ',
+								description: 'Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-unpredictable-change',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html',
 								level: 1
@@ -488,7 +488,7 @@ module.exports = {
 							3: {
 								id: 'consistent-behavior-consistent-locations',
 								handle: '3.2.3 Consistent Navigation',
-								description: ' Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. ',
+								description: 'Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-locations',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html',
 								level: 2
@@ -496,7 +496,7 @@ module.exports = {
 							4: {
 								id: 'consistent-behavior-consistent-functionality',
 								handle: '3.2.4 Consistent Identification',
-								description: ' Components that have the same functionality within a set of Web pages are identified consistently. ',
+								description: 'Components that have the same functionality within a set of Web pages are identified consistently.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-consistent-functionality',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html',
 								level: 2
@@ -504,7 +504,7 @@ module.exports = {
 							5: {
 								id: 'consistent-behavior-no-extreme-changes-context',
 								handle: '3.2.5 Change on Request',
-								description: ' Changes of context are initiated only by user request or a mechanism is available to turn off such changes. ',
+								description: 'Changes of context are initiated only by user request or a mechanism is available to turn off such changes.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-consistent-behavior-no-extreme-changes-context',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html',
 								level: 3
@@ -519,7 +519,7 @@ module.exports = {
 							1: {
 								id: 'minimize-error-identified',
 								handle: '3.3.1 Error Identification',
-								description: ' If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. ',
+								description: 'If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-identified',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html',
 								level: 1
@@ -527,7 +527,7 @@ module.exports = {
 							2: {
 								id: 'minimize-error-cues',
 								handle: '3.3.2 Labels or Instructions',
-								description: ' Labels or instructions are provided when content requires user input. ',
+								description: 'Labels or instructions are provided when content requires user input.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html',
 								level: 1
@@ -535,7 +535,7 @@ module.exports = {
 							3: {
 								id: 'minimize-error-suggestions',
 								handle: '3.3.3 Error Suggestion',
-								description: ' If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. ',
+								description: 'If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-suggestions',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html',
 								level: 2
@@ -543,7 +543,7 @@ module.exports = {
 							4: {
 								id: 'minimize-error-reversible',
 								handle: '3.3.4 Error Prevention (Legal, Financial, Data)',
-								description: ' For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:  Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
+								description: '3.3.4 Error Prevention (Legal, Financial, Data): For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:  Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html',
 								level: 2
@@ -551,7 +551,7 @@ module.exports = {
 							5: {
 								id: 'minimize-error-context-help',
 								handle: '3.3.5 Help',
-								description: ' Context-sensitive help is available. ',
+								description: 'Context-sensitive help is available.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-context-help',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html',
 								level: 3
@@ -559,7 +559,7 @@ module.exports = {
 							6: {
 								id: 'minimize-error-reversible-all',
 								handle: '3.3.6 Error Prevention (All)',
-								description: ' For Web pages that require the user to submit information, at least one of the following is true:  Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
+								description: 'For Web pages that require the user to submit information, at least one of the following is true:  Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-reversible-all',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html',
 								level: 3
@@ -580,7 +580,7 @@ module.exports = {
 							1: {
 								id: 'ensure-compat-parses',
 								handle: '4.1.1 Parsing',
-								description: ' In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.  Note: Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.',
+								description: 'In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.   Note: : Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-parses',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html',
 								level: 1
@@ -588,7 +588,7 @@ module.exports = {
 							2: {
 								id: 'ensure-compat-rsv',
 								handle: '4.1.2 Name, Role, Value',
-								description: ' For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.  Note: This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.',
+								description: '4.1.2 Name, Role, Value: For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.   Note: : This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.',
 								quickReference: 'http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv',
 								detailedReference: 'http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html',
 								level: 1
@@ -2062,7 +2062,7 @@ module.exports = {
 							1: {
 								id: 'non-text-content',
 								handle: '1.1.1 Non-text Content',
-								description: 'Success Criterion 1.1.1 Non-text Content§Understanding Non-text Content | How to Meet Non-text ContentAll non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.Controls, Input If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Success Criterion 4.1.2 for additional requirements for controls and content that accepts user input.) Time-Based Media If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.) Test If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content. Sensory If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content. CAPTCHA If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. Decoration, Formatting, Invisible If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.',
+								description: 'All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below. Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Success Criterion 4.1.2 for additional requirements for controls and content that accepts user input.) Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.) Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content. Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content. CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#non-text-content',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html',
 								level: 1
@@ -2076,7 +2076,7 @@ module.exports = {
 							1: {
 								id: 'audio-only-and-video-only-prerecorded',
 								handle: '1.2.1 Audio-only and Video-only (Prerecorded)',
-								description: 'Prerecorded Audio-only An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content. Prerecorded Video-only Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
+								description: 'For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such: Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content. Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html',
 								level: 1
@@ -2084,7 +2084,7 @@ module.exports = {
 							2: {
 								id: 'captions-prerecorded',
 								handle: '1.2.2 Captions (Prerecorded)',
-								description: 'Success Criterion 1.2.2 Captions (Prerecorded)§Understanding Captions (Prerecorded) | How to Meet Captions (Prerecorded)Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
+								description: 'Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html',
 								level: 1
@@ -2092,7 +2092,7 @@ module.exports = {
 							3: {
 								id: 'audio-description-or-media-alternative-prerecorded',
 								handle: '1.2.3 Audio Description or Media Alternative (Prerecorded)',
-								description: 'Success Criterion 1.2.3 Audio Description or Media Alternative (Prerecorded)§Understanding Audio Description or Media Alternative (Prerecorded) | How to Meet Audio Description or Media Alternative (Prerecorded)An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
+								description: 'An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html',
 								level: 1
@@ -2100,7 +2100,7 @@ module.exports = {
 							4: {
 								id: 'captions-live',
 								handle: '1.2.4 Captions (Live)',
-								description: 'Success Criterion 1.2.4 Captions (Live)§Understanding Captions (Live) | How to Meet Captions (Live)Captions are provided for all live audio content in synchronized media.',
+								description: 'Captions are provided for all live audio content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#captions-live',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html',
 								level: 2
@@ -2108,7 +2108,7 @@ module.exports = {
 							5: {
 								id: 'audio-description-prerecorded',
 								handle: '1.2.5 Audio Description (Prerecorded)',
-								description: 'Success Criterion 1.2.5 Audio Description (Prerecorded)§Understanding Audio Description (Prerecorded) | How to Meet Audio Description (Prerecorded)Audio description is provided for all prerecorded video content in synchronized media.',
+								description: 'Audio description is provided for all prerecorded video content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html',
 								level: 2
@@ -2116,7 +2116,7 @@ module.exports = {
 							6: {
 								id: 'sign-language-prerecorded',
 								handle: '1.2.6 Sign Language (Prerecorded)',
-								description: 'Success Criterion 1.2.6 Sign Language (Prerecorded)§Understanding Sign Language (Prerecorded) | How to Meet Sign Language (Prerecorded)Sign language interpretation is provided for all prerecorded audio content in synchronized media.',
+								description: 'Sign language interpretation is provided for all prerecorded audio content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#sign-language-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded.html',
 								level: 3
@@ -2124,7 +2124,7 @@ module.exports = {
 							7: {
 								id: 'extended-audio-description-prerecorded',
 								handle: '1.2.7 Extended Audio Description (Prerecorded)',
-								description: 'Success Criterion 1.2.7 Extended Audio Description (Prerecorded)§Understanding Extended Audio Description (Prerecorded) | How to Meet Extended Audio Description (Prerecorded)Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.',
+								description: 'Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#extended-audio-description-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded.html',
 								level: 3
@@ -2132,7 +2132,7 @@ module.exports = {
 							8: {
 								id: 'media-alternative-prerecorded',
 								handle: '1.2.8 Media Alternative (Prerecorded)',
-								description: 'Success Criterion 1.2.8 Media Alternative (Prerecorded)§Understanding Media Alternative (Prerecorded) | How to Meet Media Alternative (Prerecorded)An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.',
+								description: 'An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#media-alternative-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded.html',
 								level: 3
@@ -2140,7 +2140,7 @@ module.exports = {
 							9: {
 								id: 'audio-only-live',
 								handle: '1.2.9 Audio-only (Live)',
-								description: 'Success Criterion 1.2.9 Audio-only (Live)§Understanding Audio-only (Live) | How to Meet Audio-only (Live)An alternative for time-based media that presents equivalent information for live audio-only content is provided.',
+								description: 'An alternative for time-based media that presents equivalent information for live audio-only content is provided.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#audio-only-live',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/audio-only-live.html',
 								level: 3
@@ -2154,7 +2154,7 @@ module.exports = {
 							1: {
 								id: 'info-and-relationships',
 								handle: '1.3.1 Info and Relationships',
-								description: 'Success Criterion 1.3.1 Info and Relationships§Understanding Info and Relationships | How to Meet Info and RelationshipsInformation, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.',
+								description: 'Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html',
 								level: 1
@@ -2162,7 +2162,7 @@ module.exports = {
 							2: {
 								id: 'meaningful-sequence',
 								handle: '1.3.2 Meaningful Sequence',
-								description: 'Success Criterion 1.3.2 Meaningful Sequence§Understanding Meaningful Sequence | How to Meet Meaningful SequenceWhen the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.',
+								description: 'When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html',
 								level: 1
@@ -2170,7 +2170,7 @@ module.exports = {
 							3: {
 								id: 'sensory-characteristics',
 								handle: '1.3.3 Sensory Characteristics',
-								description: 'Success Criterion 1.3.3 Sensory Characteristics§Understanding Sensory Characteristics | How to Meet Sensory CharacteristicsInstructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound.NoteFor requirements related to color, refer to Guideline 1.4.',
+								description: 'Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound. Note: For requirements related to color, refer to Guideline 1.4.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html',
 								level: 1
@@ -2178,7 +2178,7 @@ module.exports = {
 							4: {
 								id: 'orientation',
 								handle: '1.3.4 Orientation',
-								description: 'Success Criterion 1.3.4 Orientation§Understanding Orientation | How to Meet OrientationContent does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.NoteExamples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable.',
+								description: 'Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential. Note: Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#orientation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/orientation.html',
 								level: 2
@@ -2186,7 +2186,7 @@ module.exports = {
 							5: {
 								id: 'identify-input-purpose',
 								handle: '1.3.5 Identify Input Purpose',
-								description: 'The input field serves a purpose identified in the Input Purposes for User Interface Components section; and The content is implemented using technologies with support for identifying the expected meaning for form input data.',
+								description: 'The purpose of each input field collecting information about the user can be programmatically determined when: The input field serves a purpose identified in the Input Purposes for User Interface Components section; and The content is implemented using technologies with support for identifying the expected meaning for form input data.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#identify-input-purpose',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html',
 								level: 2
@@ -2194,7 +2194,7 @@ module.exports = {
 							6: {
 								id: 'identify-purpose',
 								handle: '1.3.6 Identify Purpose',
-								description: 'Success Criterion 1.3.6 Identify Purpose§Understanding Identify Purpose | How to Meet Identify PurposeIn content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.',
+								description: 'In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#identify-purpose',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose.html',
 								level: 3
@@ -2208,7 +2208,7 @@ module.exports = {
 							1: {
 								id: 'use-of-color',
 								handle: '1.4.1 Use of Color',
-								description: 'Success Criterion 1.4.1 Use of Color§Understanding Use of Color | How to Meet Use of ColorColor is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.NoteThis success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.',
+								description: 'Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. Note: This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#use-of-color',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html',
 								level: 1
@@ -2216,7 +2216,7 @@ module.exports = {
 							2: {
 								id: 'audio-control',
 								handle: '1.4.2 Audio Control',
-								description: ' Non-Interference.',
+								description: 'If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#audio-control',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html',
 								level: 1
@@ -2224,7 +2224,7 @@ module.exports = {
 							3: {
 								id: 'contrast-minimum',
 								handle: '1.4.3 Contrast (Minimum)',
-								description: '1, except for the following:Large Text Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Incidental Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes Text that is part of a logo or brand name has no contrast requirement.',
+								description: 'The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no contrast requirement.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html',
 								level: 2
@@ -2232,7 +2232,7 @@ module.exports = {
 							4: {
 								id: 'resize-text',
 								handle: '1.4.4 Resize text',
-								description: 'Success Criterion 1.4.4 Resize text§Understanding Resize text | How to Meet Resize textExcept for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.',
+								description: 'Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#resize-text',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html',
 								level: 2
@@ -2240,7 +2240,7 @@ module.exports = {
 							5: {
 								id: 'images-of-text',
 								handle: '1.4.5 Images of Text',
-								description: 'Customizable The image of text can be visually customized to the user\'s requirements; Essential A particular presentation of text is essential to the information being conveyed.NoteLogotypes (text that is part of a logo or brand name) are considered essential.',
+								description: 'If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: Customizable: The image of text can be visually customized to the user\'s requirements; Essential: A particular presentation of text is essential to the information being conveyed. Note: Logotypes (text that is part of a logo or brand name) are considered essential.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#images-of-text',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html',
 								level: 2
@@ -2248,7 +2248,7 @@ module.exports = {
 							6: {
 								id: 'contrast-enhanced',
 								handle: '1.4.6 Contrast (Enhanced)',
-								description: '1, except for the following:Large Text Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; Incidental Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes Text that is part of a logo or brand name has no contrast requirement.',
+								description: 'The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no contrast requirement.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html',
 								level: 3
@@ -2256,7 +2256,7 @@ module.exports = {
 							7: {
 								id: 'low-or-no-background-audio',
 								handle: '1.4.7 Low or No Background Audio',
-								description: 'No Background The audio does not contain background sounds. Turn Off The background sounds can be turned off. 20 dB The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds. NotePer the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.',
+								description: 'For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true: No Background: The audio does not contain background sounds. Turn Off: The background sounds can be turned off. 20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds. Note: Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#low-or-no-background-audio',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/low-or-no-background-audio.html',
 								level: 3
@@ -2264,7 +2264,7 @@ module.exports = {
 							8: {
 								id: 'visual-presentation',
 								handle: '1.4.8 Visual Presentation',
-								description: 'Foreground and background colors can be selected by the user. Width is no more than 80 characters or glyphs (40 if CJK). Text is not justified (aligned to both the left and the right margins). Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing. Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
+								description: 'For the visual presentation of blocks of text, a mechanism is available to achieve the following: Foreground and background colors can be selected by the user. Width is no more than 80 characters or glyphs (40 if CJK). Text is not justified (aligned to both the left and the right margins). Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing. Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#visual-presentation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html',
 								level: 3
@@ -2272,7 +2272,7 @@ module.exports = {
 							9: {
 								id: 'images-of-text-no-exception',
 								handle: '1.4.9 Images of Text (No Exception)',
-								description: 'Success Criterion 1.4.9 Images of Text (No Exception)§Understanding Images of Text (No Exception) | How to Meet Images of Text (No Exception)Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.NoteLogotypes (text that is part of a logo or brand name) are considered essential.',
+								description: 'Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed. Note: Logotypes (text that is part of a logo or brand name) are considered essential.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#images-of-text-no-exception',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception.html',
 								level: 3
@@ -2280,7 +2280,7 @@ module.exports = {
 							10: {
 								id: 'reflow',
 								handle: '1.4.10 Reflow',
-								description: 'Vertical scrolling content at a width equivalent to 320 CSS pixels; Horizontal scrolling content at a height equivalent to 256 CSS pixels.Except for parts of the content which require two-dimensional layout for usage or meaning.NoteNote: 320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which are designed to scroll horizontally (e.g. with vertical text), the 256 CSS pixels is equivalent to a starting viewport height of 1024px at 400% zoom.NoteExamples of content which require two-dimensional layout are images, maps, diagrams, video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while manipulating content.',
+								description: 'Success Criterion 1.4.10 Reflow§  Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for: Vertical scrolling content at a width equivalent to 320 CSS pixels; Horizontal scrolling content at a height equivalent to 256 CSS pixels. Except for parts of the content which require two-dimensional layout for usage or meaning. Note:  320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which are designed to scroll horizontally (e.g. with vertical text), the 256 CSS pixels is equivalent to a starting viewport height of 1024px at 400% zoom. Note: Examples of content which require two-dimensional layout are images, maps, diagrams, video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while manipulating content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#reflow',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/reflow.html',
 								level: 2
@@ -2288,7 +2288,7 @@ module.exports = {
 							11: {
 								id: 'non-text-contrast',
 								handle: '1.4.11 Non-text Contrast',
-								description: '1 against adjacent color(s):User Interface Components Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author; Graphical Objects Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.',
+								description: 'Success Criterion 1.4.11 Non-text Contrast§  The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s): User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author; Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#non-text-contrast',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html',
 								level: 2
@@ -2296,7 +2296,7 @@ module.exports = {
 							12: {
 								id: 'text-spacing',
 								handle: '1.4.12 Text Spacing',
-								description: 'Line height (line spacing) to at least 1.5 times the font size; Spacing following paragraphs to at least 2 times the font size; Letter spacing (tracking) to at least 0.12 times the font size; Word spacing to at least 0.16 times the font size.Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.',
+								description: 'Success Criterion 1.4.12 Text Spacing§  In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property: Line height (line spacing) to at least 1.5 times the font size; Spacing following paragraphs to at least 2 times the font size; Letter spacing (tracking) to at least 0.12 times the font size; Word spacing to at least 0.16 times the font size. Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#text-spacing',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html',
 								level: 2
@@ -2304,7 +2304,7 @@ module.exports = {
 							13: {
 								id: 'content-on-hover-or-focus',
 								handle: '1.4.13 Content on Hover or Focus',
-								description: 'Dismissable A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content; Hoverable If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing; Persistent The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.NoteExamples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute.NoteCustom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.',
+								description: 'Success Criterion 1.4.13 Content on Hover or Focus§  Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: Dismissable: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content; Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing; Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid. Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author. Note: Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute. Note: Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/content-on-hover-or-focus.html',
 								level: 2
@@ -2324,7 +2324,7 @@ module.exports = {
 							1: {
 								id: 'keyboard',
 								handle: '2.1.1 Keyboard',
-								description: 'Success Criterion 2.1.1 Keyboard§Understanding Keyboard | How to Meet KeyboardAll functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints.NoteThis exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not.NoteThis does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.',
+								description: 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints. Note: This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not. Note: This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#keyboard',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html',
 								level: 1
@@ -2332,7 +2332,7 @@ module.exports = {
 							2: {
 								id: 'no-keyboard-trap',
 								handle: '2.1.2 No Keyboard Trap',
-								description: ' Non-Interference.',
+								description: 'If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html',
 								level: 1
@@ -2340,7 +2340,7 @@ module.exports = {
 							3: {
 								id: 'keyboard-no-exception',
 								handle: '2.1.3 Keyboard (No Exception)',
-								description: 'Success Criterion 2.1.3 Keyboard (No Exception)§Understanding Keyboard (No Exception) | How to Meet Keyboard (No Exception)All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.',
+								description: 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/keyboard-no-exception.html',
 								level: 3
@@ -2348,7 +2348,7 @@ module.exports = {
 							4: {
 								id: 'character-key-shortcuts',
 								handle: '2.1.4 Character Key Shortcuts',
-								description: 'Turn off A mechanism is available to turn the shortcut off; Remap A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc); Active only on focus The keyboard shortcut for a user interface component is only active when that component has focus.',
+								description: 'If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: Turn off: A mechanism is available to turn the shortcut off; Remap: A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc); Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#character-key-shortcuts',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/character-key-shortcuts.html',
 								level: 1
@@ -2362,7 +2362,7 @@ module.exports = {
 							1: {
 								id: 'timing-adjustable',
 								handle: '2.2.1 Timing Adjustable',
-								description: 'Turn off The user is allowed to turn off the time limit before encountering it; or Adjust The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or Extend The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or Real-time Exception The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or Essential Exception The time limit is essential and extending it would invalidate the activity; or 20 Hour Exception The time limit is longer than 20 hours.NoteThis success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action.',
+								description: 'For each time limit that is set by the content, at least one of the following is true: Turn off: The user is allowed to turn off the time limit before encountering it; or Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or Essential Exception: The time limit is essential and extending it would invalidate the activity; or 20 Hour Exception: The time limit is longer than 20 hours. Note: This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html',
 								level: 1
@@ -2370,7 +2370,7 @@ module.exports = {
 							2: {
 								id: 'pause-stop-hide',
 								handle: '2.2.2 Pause, Stop, Hide',
-								description: 'Moving, blinking, scrolling For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and Auto-updating For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.NoteFor requirements related to flickering or flashing content, refer to Guideline 2.3.NoteSince any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.NoteContent that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.NoteAn animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.',
+								description: 'Success Criterion 2.2.2 Pause, Stop, Hide§  For moving, blinking, scrolling, or auto-updating information, all of the following are true: Moving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and Auto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential. Note: For requirements related to flickering or flashing content, refer to Guideline 2.3. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. Note: Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so. Note: An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html',
 								level: 1
@@ -2378,7 +2378,7 @@ module.exports = {
 							3: {
 								id: 'no-timing',
 								handle: '2.2.3 No Timing',
-								description: 'Success Criterion 2.2.3 No Timing§Understanding No Timing | How to Meet No TimingTiming is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.',
+								description: 'Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#no-timing',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/no-timing.html',
 								level: 3
@@ -2386,7 +2386,7 @@ module.exports = {
 							4: {
 								id: 'interruptions',
 								handle: '2.2.4 Interruptions',
-								description: 'Success Criterion 2.2.4 Interruptions§Understanding Interruptions | How to Meet InterruptionsInterruptions can be postponed or suppressed by the user, except interruptions involving an emergency.',
+								description: 'Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#interruptions',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/interruptions.html',
 								level: 3
@@ -2394,7 +2394,7 @@ module.exports = {
 							5: {
 								id: 're-authenticating',
 								handle: '2.2.5 Re-authenticating',
-								description: 'Success Criterion 2.2.5 Re-authenticating§Understanding Re-authenticating | How to Meet Re-authenticatingWhen an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.',
+								description: 'When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#re-authenticating',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/re-authenticating.html',
 								level: 3
@@ -2402,7 +2402,7 @@ module.exports = {
 							6: {
 								id: 'timeouts',
 								handle: '2.2.6 Timeouts',
-								description: 'Success Criterion 2.2.6 Timeouts§Understanding Timeouts | How to Meet TimeoutsUsers are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.NotePrivacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.',
+								description: 'Users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions. Note: Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#timeouts',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/timeouts.html',
 								level: 3
@@ -2416,7 +2416,7 @@ module.exports = {
 							1: {
 								id: 'three-flashes-or-below-threshold',
 								handle: '2.3.1 Three Flashes or Below Threshold',
-								description: ' Non-Interference.',
+								description: 'Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html',
 								level: 1
@@ -2424,7 +2424,7 @@ module.exports = {
 							2: {
 								id: 'three-flashes',
 								handle: '2.3.2 Three Flashes',
-								description: 'Success Criterion 2.3.2 Three Flashes§Understanding Three Flashes | How to Meet Three FlashesWeb pages do not contain anything that flashes more than three times in any one second period.',
+								description: 'Web pages do not contain anything that flashes more than three times in any one second period.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#three-flashes',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/three-flashes.html',
 								level: 3
@@ -2432,7 +2432,7 @@ module.exports = {
 							3: {
 								id: 'animation-from-interactions',
 								handle: '2.3.3 Animation from Interactions',
-								description: 'Success Criterion 2.3.3 Animation from Interactions§Understanding Animation from Interactions | How to Meet Animation from InteractionsMotion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.',
+								description: 'Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#animation-from-interactions',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html',
 								level: 3
@@ -2446,7 +2446,7 @@ module.exports = {
 							1: {
 								id: 'bypass-blocks',
 								handle: '2.4.1 Bypass Blocks',
-								description: 'Success Criterion 2.4.1 Bypass Blocks§Understanding Bypass Blocks | How to Meet Bypass BlocksA mechanism is available to bypass blocks of content that are repeated on multiple Web pages.',
+								description: 'A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html',
 								level: 1
@@ -2454,7 +2454,7 @@ module.exports = {
 							2: {
 								id: 'page-titled',
 								handle: '2.4.2 Page Titled',
-								description: 'Success Criterion 2.4.2 Page Titled§Understanding Page Titled | How to Meet Page TitledWeb pages have titles that describe topic or purpose.',
+								description: 'Web pages have titles that describe topic or purpose.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#page-titled',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html',
 								level: 1
@@ -2462,7 +2462,7 @@ module.exports = {
 							3: {
 								id: 'focus-order',
 								handle: '2.4.3 Focus Order',
-								description: 'Success Criterion 2.4.3 Focus Order§Understanding Focus Order | How to Meet Focus OrderIf a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.',
+								description: 'If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#focus-order',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html',
 								level: 1
@@ -2470,7 +2470,7 @@ module.exports = {
 							4: {
 								id: 'link-purpose-in-context',
 								handle: '2.4.4 Link Purpose (In Context)',
-								description: 'Success Criterion 2.4.4 Link Purpose (In Context)§Understanding Link Purpose (In Context) | How to Meet Link Purpose (In Context)The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.',
+								description: 'The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html',
 								level: 1
@@ -2478,7 +2478,7 @@ module.exports = {
 							5: {
 								id: 'multiple-ways',
 								handle: '2.4.5 Multiple Ways',
-								description: 'Success Criterion 2.4.5 Multiple Ways§Understanding Multiple Ways | How to Meet Multiple WaysMore than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.',
+								description: 'More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/multiple-ways.html',
 								level: 2
@@ -2486,7 +2486,7 @@ module.exports = {
 							6: {
 								id: 'headings-and-labels',
 								handle: '2.4.6 Headings and Labels',
-								description: 'Success Criterion 2.4.6 Headings and Labels§Understanding Headings and Labels | How to Meet Headings and LabelsHeadings and labels describe topic or purpose.',
+								description: 'Headings and labels describe topic or purpose.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html',
 								level: 2
@@ -2494,7 +2494,7 @@ module.exports = {
 							7: {
 								id: 'focus-visible',
 								handle: '2.4.7 Focus Visible',
-								description: 'Success Criterion 2.4.7 Focus Visible§Understanding Focus Visible | How to Meet Focus VisibleAny keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.',
+								description: 'Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#focus-visible',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html',
 								level: 2
@@ -2502,7 +2502,7 @@ module.exports = {
 							8: {
 								id: 'location',
 								handle: '2.4.8 Location',
-								description: 'Success Criterion 2.4.8 Location§Understanding Location | How to Meet LocationInformation about the user\'s location within a set of Web pages is available.',
+								description: 'Information about the user\'s location within a set of Web pages is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#location',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/location.html',
 								level: 3
@@ -2510,7 +2510,7 @@ module.exports = {
 							9: {
 								id: 'link-purpose-link-only',
 								handle: '2.4.9 Link Purpose (Link Only)',
-								description: 'Success Criterion 2.4.9 Link Purpose (Link Only)§Understanding Link Purpose (Link Only) | How to Meet Link Purpose (Link Only)A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.',
+								description: 'A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-link-only',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html',
 								level: 3
@@ -2518,7 +2518,7 @@ module.exports = {
 							10: {
 								id: 'section-headings',
 								handle: '2.4.10 Section Headings',
-								description: 'Success Criterion 2.4.10 Section Headings§Understanding Section Headings | How to Meet Section HeadingsSection headings are used to organize the content.Note"Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content.NoteThis success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2.',
+								description: 'Success Criterion 2.4.10 Section Headings§  Section headings are used to organize the content. Note: "Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content. Note: This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#section-headings',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/section-headings.html',
 								level: 3
@@ -2532,7 +2532,7 @@ module.exports = {
 							1: {
 								id: 'pointer-gestures',
 								handle: '2.5.1 Pointer Gestures',
-								description: 'Success Criterion 2.5.1 Pointer Gestures§Understanding Pointer Gestures | How to Meet Pointer GesturesAll functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.NoteThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
+								description: 'All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential. Note: This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#pointer-gestures',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html',
 								level: 1
@@ -2540,7 +2540,7 @@ module.exports = {
 							2: {
 								id: 'pointer-cancellation',
 								handle: '2.5.2 Pointer Cancellation',
-								description: 'No Down-Event The down-event of the pointer is not used to execute any part of the function; Abort or Undo Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion; Up Reversal The up-event reverses any outcome of the preceding down-event; Essential Completing the function on the down-event is essential.NoteFunctions that emulate a keyboard or numeric keypad key press are considered essential.NoteThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
+								description: 'For functionality that can be operated using a single pointer, at least one of the following is true: No Down-Event: The down-event of the pointer is not used to execute any part of the function; Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion; Up Reversal: The up-event reverses any outcome of the preceding down-event; Essential: Completing the function on the down-event is essential. Note: Functions that emulate a keyboard or numeric keypad key press are considered essential. Note: This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#pointer-cancellation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/pointer-cancellation.html',
 								level: 1
@@ -2548,7 +2548,7 @@ module.exports = {
 							3: {
 								id: 'label-in-name',
 								handle: '2.5.3 Label in Name',
-								description: 'Success Criterion 2.5.3 Label in Name§Understanding Label in Name | How to Meet Label in NameFor user interface components with labels that include text or images of text, the name contains the text that is presented visually.NoteA best practice is to have the text of the label at the start of the name.',
+								description: 'For user interface components with labels that include text or images of text, the name contains the text that is presented visually. Note: A best practice is to have the text of the label at the start of the name.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#label-in-name',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html',
 								level: 1
@@ -2556,7 +2556,7 @@ module.exports = {
 							4: {
 								id: 'motion-actuation',
 								handle: '2.5.4 Motion Actuation',
-								description: 'Supported Interface The motion is used to operate functionality through an accessibility supported interface; Essential The motion is essential for the function and doing so would invalidate the activity.',
+								description: 'Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: Supported Interface: The motion is used to operate functionality through an accessibility supported interface; Essential: The motion is essential for the function and doing so would invalidate the activity.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#motion-actuation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html',
 								level: 1
@@ -2564,7 +2564,7 @@ module.exports = {
 							5: {
 								id: 'target-size',
 								handle: '2.5.5 Target Size',
-								description: 'Equivalent The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels; Inline The target is in a sentence or block of text; User Agent Control The size of the target is determined by the user agent and is not modified by the author; Essential A particular presentation of the target is essential to the information being conveyed.',
+								description: 'The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when: Equivalent: The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels; Inline: The target is in a sentence or block of text; User Agent Control: The size of the target is determined by the user agent and is not modified by the author; Essential: A particular presentation of the target is essential to the information being conveyed.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#target-size',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/target-size.html',
 								level: 3
@@ -2572,7 +2572,7 @@ module.exports = {
 							6: {
 								id: 'concurrent-input-mechanisms',
 								handle: '2.5.6 Concurrent Input Mechanisms',
-								description: 'Success Criterion 2.5.6 Concurrent Input Mechanisms§Understanding Concurrent Input Mechanisms | How to Meet Concurrent Input MechanismsWeb content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.',
+								description: 'Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#concurrent-input-mechanisms',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/concurrent-input-mechanisms.html',
 								level: 3
@@ -2592,7 +2592,7 @@ module.exports = {
 							1: {
 								id: 'language-of-page',
 								handle: '3.1.1 Language of Page',
-								description: 'Success Criterion 3.1.1 Language of Page§Understanding Language of Page | How to Meet Language of PageThe default human language of each Web page can be programmatically determined.',
+								description: 'The default human language of each Web page can be programmatically determined.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#language-of-page',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html',
 								level: 1
@@ -2600,7 +2600,7 @@ module.exports = {
 							2: {
 								id: 'language-of-parts',
 								handle: '3.1.2 Language of Parts',
-								description: 'Success Criterion 3.1.2 Language of Parts§Understanding Language of Parts | How to Meet Language of PartsThe human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.',
+								description: 'The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html',
 								level: 2
@@ -2608,7 +2608,7 @@ module.exports = {
 							3: {
 								id: 'unusual-words',
 								handle: '3.1.3 Unusual Words',
-								description: 'Success Criterion 3.1.3 Unusual Words§Understanding Unusual Words | How to Meet Unusual WordsA mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.',
+								description: 'A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#unusual-words',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/unusual-words.html',
 								level: 3
@@ -2616,7 +2616,7 @@ module.exports = {
 							4: {
 								id: 'abbreviations',
 								handle: '3.1.4 Abbreviations',
-								description: 'Success Criterion 3.1.4 Abbreviations§Understanding Abbreviations | How to Meet AbbreviationsA mechanism for identifying the expanded form or meaning of abbreviations is available.',
+								description: 'A mechanism for identifying the expanded form or meaning of abbreviations is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#abbreviations',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/abbreviations.html',
 								level: 3
@@ -2624,7 +2624,7 @@ module.exports = {
 							5: {
 								id: 'reading-level',
 								handle: '3.1.5 Reading Level',
-								description: 'Success Criterion 3.1.5 Reading Level§Understanding Reading Level | How to Meet Reading LevelWhen text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.',
+								description: 'When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#reading-level',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html',
 								level: 3
@@ -2632,7 +2632,7 @@ module.exports = {
 							6: {
 								id: 'pronunciation',
 								handle: '3.1.6 Pronunciation',
-								description: 'Success Criterion 3.1.6 Pronunciation§Understanding Pronunciation | How to Meet PronunciationA mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.',
+								description: 'A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#pronunciation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/pronunciation.html',
 								level: 3
@@ -2646,7 +2646,7 @@ module.exports = {
 							1: {
 								id: 'on-focus',
 								handle: '3.2.1 On Focus',
-								description: 'Success Criterion 3.2.1 On Focus§Understanding On Focus | How to Meet On FocusWhen any user interface component receives focus, it does not initiate a change of context.',
+								description: 'When any user interface component receives focus, it does not initiate a change of context.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#on-focus',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html',
 								level: 1
@@ -2654,7 +2654,7 @@ module.exports = {
 							2: {
 								id: 'on-input',
 								handle: '3.2.2 On Input',
-								description: 'Success Criterion 3.2.2 On Input§Understanding On Input | How to Meet On InputChanging the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.',
+								description: 'Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#on-input',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/on-input.html',
 								level: 1
@@ -2662,7 +2662,7 @@ module.exports = {
 							3: {
 								id: 'consistent-navigation',
 								handle: '3.2.3 Consistent Navigation',
-								description: 'Success Criterion 3.2.3 Consistent Navigation§Understanding Consistent Navigation | How to Meet Consistent NavigationNavigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.',
+								description: 'Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html',
 								level: 2
@@ -2670,7 +2670,7 @@ module.exports = {
 							4: {
 								id: 'consistent-identification',
 								handle: '3.2.4 Consistent Identification',
-								description: 'Success Criterion 3.2.4 Consistent Identification§Understanding Consistent Identification | How to Meet Consistent IdentificationComponents that have the same functionality within a set of Web pages are identified consistently.',
+								description: 'Components that have the same functionality within a set of Web pages are identified consistently.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html',
 								level: 2
@@ -2678,7 +2678,7 @@ module.exports = {
 							5: {
 								id: 'change-on-request',
 								handle: '3.2.5 Change on Request',
-								description: 'Success Criterion 3.2.5 Change on Request§Understanding Change on Request | How to Meet Change on RequestChanges of context are initiated only by user request or a mechanism is available to turn off such changes.',
+								description: 'Changes of context are initiated only by user request or a mechanism is available to turn off such changes.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#change-on-request',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/change-on-request.html',
 								level: 3
@@ -2692,7 +2692,7 @@ module.exports = {
 							1: {
 								id: 'error-identification',
 								handle: '3.3.1 Error Identification',
-								description: 'Success Criterion 3.3.1 Error Identification§Understanding Error Identification | How to Meet Error IdentificationIf an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.',
+								description: 'If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#error-identification',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html',
 								level: 1
@@ -2700,7 +2700,7 @@ module.exports = {
 							2: {
 								id: 'labels-or-instructions',
 								handle: '3.3.2 Labels or Instructions',
-								description: 'Success Criterion 3.3.2 Labels or Instructions§Understanding Labels or Instructions | How to Meet Labels or InstructionsLabels or instructions are provided when content requires user input.',
+								description: 'Labels or instructions are provided when content requires user input.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html',
 								level: 1
@@ -2708,7 +2708,7 @@ module.exports = {
 							3: {
 								id: 'error-suggestion',
 								handle: '3.3.3 Error Suggestion',
-								description: 'Success Criterion 3.3.3 Error Suggestion§Understanding Error Suggestion | How to Meet Error SuggestionIf an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.',
+								description: 'If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html',
 								level: 2
@@ -2716,7 +2716,7 @@ module.exports = {
 							4: {
 								id: 'error-prevention-legal-financial-data',
 								handle: '3.3.4 Error Prevention (Legal, Financial, Data)',
-								description: 'ReversibleSubmissions are reversible. CheckedData entered by the user is checked for input errors and the user is provided an opportunity to correct them. ConfirmedA mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
+								description: 'Success Criterion 3.3.4 Error Prevention (Legal, Financial, Data)§  For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-legal-financial-data',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-legal-financial-data.html',
 								level: 2
@@ -2724,7 +2724,7 @@ module.exports = {
 							5: {
 								id: 'help',
 								handle: '3.3.5 Help',
-								description: 'Success Criterion 3.3.5 Help§Understanding Help | How to Meet HelpContext-sensitive help is available.',
+								description: 'Context-sensitive help is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#help',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/help.html',
 								level: 3
@@ -2732,7 +2732,7 @@ module.exports = {
 							6: {
 								id: 'error-prevention-all',
 								handle: '3.3.6 Error Prevention (All)',
-								description: 'ReversibleSubmissions are reversible. CheckedData entered by the user is checked for input errors and the user is provided an opportunity to correct them. ConfirmedA mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
+								description: 'For Web pages that require the user to submit information, at least one of the following is true: Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#error-prevention-all',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/error-prevention-all.html',
 								level: 3
@@ -2752,7 +2752,7 @@ module.exports = {
 							1: {
 								id: 'parsing',
 								handle: '4.1.1 Parsing',
-								description: 'Success Criterion 4.1.1 Parsing§Understanding Parsing | How to Meet ParsingIn content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.NoteStart and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.',
+								description: 'In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features. Note: Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#parsing',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/parsing.html',
 								level: 1
@@ -2760,7 +2760,7 @@ module.exports = {
 							2: {
 								id: 'name-role-value',
 								handle: '4.1.2 Name, Role, Value',
-								description: ' form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.NoteThis success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.',
+								description: 'Success Criterion 4.1.2 Name, Role, Value§  For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. Note: This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#name-role-value',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html',
 								level: 1
@@ -2768,7 +2768,7 @@ module.exports = {
 							3: {
 								id: 'status-messages',
 								handle: '4.1.3 Status Messages',
-								description: 'Success Criterion 4.1.3 Status Messages§Understanding Status Messages | How to Meet Status MessagesIn content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.',
+								description: 'In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.',
 								quickReference: 'https://www.w3.org/WAI/WCAG21/quickref/#status-messages',
 								detailedReference: 'https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html',
 								level: 2
@@ -4251,7 +4251,7 @@ module.exports = {
 							1: {
 								id: 'non-text-content',
 								handle: '1.1.1 Non-text Content',
-								description: 'Success Criterion 1.1.1 Non-text ContentUnderstanding Non-text Content | How to Meet Non-text ContentAll non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.Controls, Input If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Success Criterion 4.1.2 for additional requirements for controls and content that accepts user input.) Time-Based Media If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.) Test If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content. Sensory If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content. CAPTCHA If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. Decoration, Formatting, Invisible If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.',
+								description: 'All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below. Controls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Success Criterion 4.1.2 for additional requirements for controls and content that accepts user input.) Time-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.) Test: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content. Sensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content. CAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities. Decoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#non-text-content',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/non-text-content',
 								level: 1
@@ -4265,7 +4265,7 @@ module.exports = {
 							1: {
 								id: 'audio-only-and-video-only-prerecorded',
 								handle: '1.2.1 Audio-only and Video-only (Prerecorded)',
-								description: 'Prerecorded Audio-only An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content. Prerecorded Video-only Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
+								description: 'For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such: Prerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content. Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#audio-only-and-video-only-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded',
 								level: 1
@@ -4273,7 +4273,7 @@ module.exports = {
 							2: {
 								id: 'captions-prerecorded',
 								handle: '1.2.2 Captions (Prerecorded)',
-								description: 'Success Criterion 1.2.2 Captions (Prerecorded)Understanding Captions (Prerecorded) | How to Meet Captions (Prerecorded)Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
+								description: 'Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#captions-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded',
 								level: 1
@@ -4281,7 +4281,7 @@ module.exports = {
 							3: {
 								id: 'audio-description-or-media-alternative-prerecorded',
 								handle: '1.2.3 Audio Description or Media Alternative (Prerecorded)',
-								description: 'Success Criterion 1.2.3 Audio Description or Media Alternative (Prerecorded)Understanding Audio Description or Media Alternative (Prerecorded) | How to Meet Audio Description or Media Alternative (Prerecorded)An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
+								description: 'An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#audio-description-or-media-alternative-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded',
 								level: 1
@@ -4289,7 +4289,7 @@ module.exports = {
 							4: {
 								id: 'captions-live',
 								handle: '1.2.4 Captions (Live)',
-								description: 'Success Criterion 1.2.4 Captions (Live)Understanding Captions (Live) | How to Meet Captions (Live)Captions are provided for all live audio content in synchronized media.',
+								description: 'Captions are provided for all live audio content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#captions-live',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/captions-live',
 								level: 2
@@ -4297,7 +4297,7 @@ module.exports = {
 							5: {
 								id: 'audio-description-prerecorded',
 								handle: '1.2.5 Audio Description (Prerecorded)',
-								description: 'Success Criterion 1.2.5 Audio Description (Prerecorded)Understanding Audio Description (Prerecorded) | How to Meet Audio Description (Prerecorded)Audio description is provided for all prerecorded video content in synchronized media.',
+								description: 'Audio description is provided for all prerecorded video content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#audio-description-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded',
 								level: 2
@@ -4305,7 +4305,7 @@ module.exports = {
 							6: {
 								id: 'sign-language-prerecorded',
 								handle: '1.2.6 Sign Language (Prerecorded)',
-								description: 'Success Criterion 1.2.6 Sign Language (Prerecorded)Understanding Sign Language (Prerecorded) | How to Meet Sign Language (Prerecorded)Sign language interpretation is provided for all prerecorded audio content in synchronized media.',
+								description: 'Sign language interpretation is provided for all prerecorded audio content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#sign-language-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/sign-language-prerecorded',
 								level: 3
@@ -4313,7 +4313,7 @@ module.exports = {
 							7: {
 								id: 'extended-audio-description-prerecorded',
 								handle: '1.2.7 Extended Audio Description (Prerecorded)',
-								description: 'Success Criterion 1.2.7 Extended Audio Description (Prerecorded)Understanding Extended Audio Description (Prerecorded) | How to Meet Extended Audio Description (Prerecorded)Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.',
+								description: 'Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#extended-audio-description-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/extended-audio-description-prerecorded',
 								level: 3
@@ -4321,7 +4321,7 @@ module.exports = {
 							8: {
 								id: 'media-alternative-prerecorded',
 								handle: '1.2.8 Media Alternative (Prerecorded)',
-								description: 'Success Criterion 1.2.8 Media Alternative (Prerecorded)Understanding Media Alternative (Prerecorded) | How to Meet Media Alternative (Prerecorded)An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.',
+								description: 'An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#media-alternative-prerecorded',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/media-alternative-prerecorded',
 								level: 3
@@ -4329,7 +4329,7 @@ module.exports = {
 							9: {
 								id: 'audio-only-live',
 								handle: '1.2.9 Audio-only (Live)',
-								description: 'Success Criterion 1.2.9 Audio-only (Live)Understanding Audio-only (Live) | How to Meet Audio-only (Live)An alternative for time-based media that presents equivalent information for live audio-only content is provided.',
+								description: 'An alternative for time-based media that presents equivalent information for live audio-only content is provided.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#audio-only-live',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/audio-only-live',
 								level: 3
@@ -4343,7 +4343,7 @@ module.exports = {
 							1: {
 								id: 'info-and-relationships',
 								handle: '1.3.1 Info and Relationships',
-								description: 'Success Criterion 1.3.1 Info and RelationshipsUnderstanding Info and Relationships | How to Meet Info and RelationshipsInformation, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.',
+								description: 'Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships',
 								level: 1
@@ -4351,7 +4351,7 @@ module.exports = {
 							2: {
 								id: 'meaningful-sequence',
 								handle: '1.3.2 Meaningful Sequence',
-								description: 'Success Criterion 1.3.2 Meaningful SequenceUnderstanding Meaningful Sequence | How to Meet Meaningful SequenceWhen the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.',
+								description: 'When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence',
 								level: 1
@@ -4359,7 +4359,7 @@ module.exports = {
 							3: {
 								id: 'sensory-characteristics',
 								handle: '1.3.3 Sensory Characteristics',
-								description: 'Success Criterion 1.3.3 Sensory CharacteristicsUnderstanding Sensory Characteristics | How to Meet Sensory CharacteristicsInstructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound.NoteFor requirements related to color, refer to Guideline 1.4.',
+								description: 'Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound. Note: For requirements related to color, refer to Guideline 1.4.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#sensory-characteristics',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics',
 								level: 1
@@ -4367,7 +4367,7 @@ module.exports = {
 							4: {
 								id: 'orientation',
 								handle: '1.3.4 Orientation',
-								description: 'Success Criterion 1.3.4 OrientationUnderstanding Orientation | How to Meet OrientationContent does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.NoteExamples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where content is not necessarily restricted to landscape or portrait display orientation.',
+								description: 'Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential. Note: Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where content is not necessarily restricted to landscape or portrait display orientation.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#orientation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/orientation',
 								level: 2
@@ -4375,7 +4375,7 @@ module.exports = {
 							5: {
 								id: 'identify-input-purpose',
 								handle: '1.3.5 Identify Input Purpose',
-								description: 'The input field serves a purpose identified in the Input Purposes for user interface components section; and The content is implemented using technologies with support for identifying the expected meaning for form input data.',
+								description: 'The purpose of each input field collecting information about the user can be programmatically determined when: The input field serves a purpose identified in the Input Purposes for user interface components section; and The content is implemented using technologies with support for identifying the expected meaning for form input data.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#identify-input-purpose',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose',
 								level: 2
@@ -4383,7 +4383,7 @@ module.exports = {
 							6: {
 								id: 'identify-purpose',
 								handle: '1.3.6 Identify Purpose',
-								description: 'Success Criterion 1.3.6 Identify PurposeUnderstanding Identify Purpose | How to Meet Identify PurposeIn content implemented using markup languages, the purpose of user interface components, icons, and regions can be programmatically determined.',
+								description: 'In content implemented using markup languages, the purpose of user interface components, icons, and regions can be programmatically determined.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/identify-purpose',
 								level: 3
@@ -4397,7 +4397,7 @@ module.exports = {
 							1: {
 								id: 'use-of-color',
 								handle: '1.4.1 Use of Color',
-								description: 'Success Criterion 1.4.1 Use of ColorUnderstanding Use of Color | How to Meet Use of ColorColor is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.NoteThis success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.',
+								description: 'Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. Note: This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#use-of-color',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/use-of-color',
 								level: 1
@@ -4405,7 +4405,7 @@ module.exports = {
 							2: {
 								id: 'audio-control',
 								handle: '1.4.2 Audio Control',
-								description: ' Non-Interference.',
+								description: 'If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#audio-control',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/audio-control',
 								level: 1
@@ -4413,7 +4413,7 @@ module.exports = {
 							3: {
 								id: 'contrast-minimum',
 								handle: '1.4.3 Contrast (Minimum)',
-								description: '1, except for the following:Large Text Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Incidental Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes Text that is part of a logo or brand name has no contrast requirement.',
+								description: 'The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no contrast requirement.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum',
 								level: 2
@@ -4421,7 +4421,7 @@ module.exports = {
 							4: {
 								id: 'resize-text',
 								handle: '1.4.4 Resize text',
-								description: 'Success Criterion 1.4.4 Resize textUnderstanding Resize text | How to Meet Resize textExcept for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.',
+								description: 'Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#resize-text',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/resize-text',
 								level: 2
@@ -4429,7 +4429,7 @@ module.exports = {
 							5: {
 								id: 'images-of-text',
 								handle: '1.4.5 Images of Text',
-								description: 'Customizable The image of text can be visually customized to the user\'s requirements; Essential A particular presentation of text is essential to the information being conveyed.NoteLogotypes (text that is part of a logo or brand name) are considered essential.',
+								description: 'If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: Customizable: The image of text can be visually customized to the user\'s requirements; Essential: A particular presentation of text is essential to the information being conveyed. Note: Logotypes (text that is part of a logo or brand name) are considered essential.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#images-of-text',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/images-of-text',
 								level: 2
@@ -4437,7 +4437,7 @@ module.exports = {
 							6: {
 								id: 'contrast-enhanced',
 								handle: '1.4.6 Contrast (Enhanced)',
-								description: '1, except for the following:Large Text Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; Incidental Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes Text that is part of a logo or brand name has no contrast requirement.',
+								description: 'The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: Large Text: Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1; Incidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement. Logotypes: Text that is part of a logo or brand name has no contrast requirement.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced',
 								level: 3
@@ -4445,7 +4445,7 @@ module.exports = {
 							7: {
 								id: 'low-or-no-background-audio',
 								handle: '1.4.7 Low or No Background Audio',
-								description: 'No Background The audio does not contain background sounds. Turn Off The background sounds can be turned off. 20 dB The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds. NotePer the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.',
+								description: 'For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true: No Background: The audio does not contain background sounds. Turn Off: The background sounds can be turned off. 20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds. Note: Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#low-or-no-background-audio',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/low-or-no-background-audio',
 								level: 3
@@ -4453,7 +4453,7 @@ module.exports = {
 							8: {
 								id: 'visual-presentation',
 								handle: '1.4.8 Visual Presentation',
-								description: 'Foreground and background colors can be selected by the user. Width is no more than 80 characters or glyphs (40 if CJK). Text is not justified (aligned to both the left and the right margins). Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing. Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
+								description: 'For the visual presentation of blocks of text, a mechanism is available to achieve the following: Foreground and background colors can be selected by the user. Width is no more than 80 characters or glyphs (40 if CJK). Text is not justified (aligned to both the left and the right margins). Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing. Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#visual-presentation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/visual-presentation',
 								level: 3
@@ -4461,7 +4461,7 @@ module.exports = {
 							9: {
 								id: 'images-of-text-no-exception',
 								handle: '1.4.9 Images of Text (No Exception)',
-								description: 'Success Criterion 1.4.9 Images of Text (No Exception)Understanding Images of Text (No Exception) | How to Meet Images of Text (No Exception)Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.NoteLogotypes (text that is part of a logo or brand name) are considered essential.',
+								description: 'Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed. Note: Logotypes (text that is part of a logo or brand name) are considered essential.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#images-of-text-no-exception',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception',
 								level: 3
@@ -4469,7 +4469,7 @@ module.exports = {
 							10: {
 								id: 'reflow',
 								handle: '1.4.10 Reflow',
-								description: 'Vertical scrolling content at a width equivalent to 320 CSS pixels; Horizontal scrolling content at a height equivalent to 256 CSS pixels.Except for parts of the content which require two-dimensional layout for usage or meaning.Note320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which is designed to scroll horizontally (e.g., with vertical text), 256 CSS pixels is equivalent to a starting viewport height of 1024 CSS pixels at 400% zoom.NoteExamples of content which requires two-dimensional layout are images required for understanding (such as maps and diagrams), video, games, presentations, data tables (not individual cells), and interfaces where it is necessary to keep toolbars in view while manipulating content. It is acceptable to provide two-dimensional scrolling for such parts of the content.',
+								description: 'Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for: Vertical scrolling content at a width equivalent to 320 CSS pixels; Horizontal scrolling content at a height equivalent to 256 CSS pixels. Except for parts of the content which require two-dimensional layout for usage or meaning. Note: 320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which is designed to scroll horizontally (e.g., with vertical text), 256 CSS pixels is equivalent to a starting viewport height of 1024 CSS pixels at 400% zoom. Note: Examples of content which requires two-dimensional layout are images required for understanding (such as maps and diagrams), video, games, presentations, data tables (not individual cells), and interfaces where it is necessary to keep toolbars in view while manipulating content. It is acceptable to provide two-dimensional scrolling for such parts of the content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#reflow',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/reflow',
 								level: 2
@@ -4477,7 +4477,7 @@ module.exports = {
 							11: {
 								id: 'non-text-contrast',
 								handle: '1.4.11 Non-text Contrast',
-								description: '1 against adjacent color(s):User Interface Components Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author; Graphical Objects Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.',
+								description: 'The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s): User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author; Graphical Objects: Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast',
 								level: 2
@@ -4485,7 +4485,7 @@ module.exports = {
 							12: {
 								id: 'text-spacing',
 								handle: '1.4.12 Text Spacing',
-								description: 'Line height (line spacing) to at least 1.5 times the font size; Spacing following paragraphs to at least 2 times the font size; Letter spacing (tracking) to at least 0.12 times the font size; Word spacing to at least 0.16 times the font size.Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.',
+								description: 'In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property: Line height (line spacing) to at least 1.5 times the font size; Spacing following paragraphs to at least 2 times the font size; Letter spacing (tracking) to at least 0.12 times the font size; Word spacing to at least 0.16 times the font size. Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#text-spacing',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/text-spacing',
 								level: 2
@@ -4493,7 +4493,7 @@ module.exports = {
 							13: {
 								id: 'content-on-hover-or-focus',
 								handle: '1.4.13 Content on Hover or Focus',
-								description: 'Dismissible A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content; Hoverable If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing; Persistent The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.NoteExamples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute.NoteCustom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.',
+								description: 'Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: Dismissible: A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content; Hoverable: If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing; Persistent: The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid. Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author. Note: Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute. Note: Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus',
 								level: 2
@@ -4513,7 +4513,7 @@ module.exports = {
 							1: {
 								id: 'keyboard',
 								handle: '2.1.1 Keyboard',
-								description: 'Success Criterion 2.1.1 KeyboardUnderstanding Keyboard | How to Meet KeyboardAll functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints.NoteThis exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not.NoteThis does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.',
+								description: 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user\'s movement and not just the endpoints. Note: This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does not. Note: This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#keyboard',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/keyboard',
 								level: 1
@@ -4521,7 +4521,7 @@ module.exports = {
 							2: {
 								id: 'no-keyboard-trap',
 								handle: '2.1.2 No Keyboard Trap',
-								description: ' Non-Interference.',
+								description: 'If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap',
 								level: 1
@@ -4529,7 +4529,7 @@ module.exports = {
 							3: {
 								id: 'keyboard-no-exception',
 								handle: '2.1.3 Keyboard (No Exception)',
-								description: 'Success Criterion 2.1.3 Keyboard (No Exception)Understanding Keyboard (No Exception) | How to Meet Keyboard (No Exception)All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.',
+								description: 'All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#keyboard-no-exception',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/keyboard-no-exception',
 								level: 3
@@ -4537,7 +4537,7 @@ module.exports = {
 							4: {
 								id: 'character-key-shortcuts',
 								handle: '2.1.4 Character Key Shortcuts',
-								description: 'Turn off A mechanism is available to turn the shortcut off; Remap A mechanism is available to remap the shortcut to include one or more non-printable keyboard keys (e.g., Ctrl, Alt); Active only on focus The keyboard shortcut for a user interface component is only active when that component has focus.',
+								description: 'If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: Turn off: A mechanism is available to turn the shortcut off; Remap: A mechanism is available to remap the shortcut to include one or more non-printable keyboard keys (e.g., Ctrl, Alt); Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#character-key-shortcuts',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts',
 								level: 1
@@ -4551,7 +4551,7 @@ module.exports = {
 							1: {
 								id: 'timing-adjustable',
 								handle: '2.2.1 Timing Adjustable',
-								description: 'Turn off The user is allowed to turn off the time limit before encountering it; or Adjust The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or Extend The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or Real-time Exception The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or Essential Exception The time limit is essential and extending it would invalidate the activity; or 20 Hour Exception The time limit is longer than 20 hours.NoteThis success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action.',
+								description: 'For each time limit that is set by the content, at least one of the following is true: Turn off: The user is allowed to turn off the time limit before encountering it; or Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or Extend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or Real-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or Essential Exception: The time limit is essential and extending it would invalidate the activity; or 20 Hour Exception: The time limit is longer than 20 hours. Note: This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#timing-adjustable',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable',
 								level: 1
@@ -4559,7 +4559,7 @@ module.exports = {
 							2: {
 								id: 'pause-stop-hide',
 								handle: '2.2.2 Pause, Stop, Hide',
-								description: 'Moving, blinking, scrolling For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and Auto-updating For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.NoteFor requirements related to flickering or flashing content, refer to Guideline 2.3.NoteSince any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.NoteContent that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.NoteAn animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.',
+								description: 'For moving, blinking, scrolling, or auto-updating information, all of the following are true: Moving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and Auto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential. Note: For requirements related to flickering or flashing content, refer to Guideline 2.3. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference. Note: Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so. Note: An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide',
 								level: 1
@@ -4567,7 +4567,7 @@ module.exports = {
 							3: {
 								id: 'no-timing',
 								handle: '2.2.3 No Timing',
-								description: 'Success Criterion 2.2.3 No TimingUnderstanding No Timing | How to Meet No TimingTiming is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.',
+								description: 'Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#no-timing',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/no-timing',
 								level: 3
@@ -4575,7 +4575,7 @@ module.exports = {
 							4: {
 								id: 'interruptions',
 								handle: '2.2.4 Interruptions',
-								description: 'Success Criterion 2.2.4 InterruptionsUnderstanding Interruptions | How to Meet InterruptionsInterruptions can be postponed or suppressed by the user, except interruptions involving an emergency.',
+								description: 'Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#interruptions',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/interruptions',
 								level: 3
@@ -4583,7 +4583,7 @@ module.exports = {
 							5: {
 								id: 're-authenticating',
 								handle: '2.2.5 Re-authenticating',
-								description: 'Success Criterion 2.2.5 Re-authenticatingUnderstanding Re-authenticating | How to Meet Re-authenticatingWhen an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.',
+								description: 'When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#re-authenticating',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/re-authenticating',
 								level: 3
@@ -4591,7 +4591,7 @@ module.exports = {
 							6: {
 								id: 'timeouts',
 								handle: '2.2.6 Timeouts',
-								description: 'Success Criterion 2.2.6 TimeoutsUnderstanding Timeouts | How to Meet TimeoutsUsers are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.NotePrivacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.',
+								description: 'Users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions. Note: Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#timeouts',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/timeouts',
 								level: 3
@@ -4605,7 +4605,7 @@ module.exports = {
 							1: {
 								id: 'three-flashes-or-below-threshold',
 								handle: '2.3.1 Three Flashes or Below Threshold',
-								description: ' Non-Interference.',
+								description: 'Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds. Note: Since any content that does not meet this success criterion can interfere with a user\'s ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold',
 								level: 1
@@ -4613,7 +4613,7 @@ module.exports = {
 							2: {
 								id: 'three-flashes',
 								handle: '2.3.2 Three Flashes',
-								description: 'Success Criterion 2.3.2 Three FlashesUnderstanding Three Flashes | How to Meet Three FlashesWeb pages do not contain anything that flashes more than three times in any one second period.',
+								description: 'Web pages do not contain anything that flashes more than three times in any one second period.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#three-flashes',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/three-flashes',
 								level: 3
@@ -4621,7 +4621,7 @@ module.exports = {
 							3: {
 								id: 'animation-from-interactions',
 								handle: '2.3.3 Animation from Interactions',
-								description: 'Success Criterion 2.3.3 Animation from InteractionsUnderstanding Animation from Interactions | How to Meet Animation from InteractionsMotion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.',
+								description: 'Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions',
 								level: 3
@@ -4635,7 +4635,7 @@ module.exports = {
 							1: {
 								id: 'bypass-blocks',
 								handle: '2.4.1 Bypass Blocks',
-								description: 'Success Criterion 2.4.1 Bypass BlocksUnderstanding Bypass Blocks | How to Meet Bypass BlocksA mechanism is available to bypass blocks of content that are repeated on multiple Web pages.',
+								description: 'A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks',
 								level: 1
@@ -4643,7 +4643,7 @@ module.exports = {
 							2: {
 								id: 'page-titled',
 								handle: '2.4.2 Page Titled',
-								description: 'Success Criterion 2.4.2 Page TitledUnderstanding Page Titled | How to Meet Page TitledWeb pages have titles that describe topic or purpose.',
+								description: 'Web pages have titles that describe topic or purpose.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#page-titled',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/page-titled',
 								level: 1
@@ -4651,7 +4651,7 @@ module.exports = {
 							3: {
 								id: 'focus-order',
 								handle: '2.4.3 Focus Order',
-								description: 'Success Criterion 2.4.3 Focus OrderUnderstanding Focus Order | How to Meet Focus OrderIf a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.',
+								description: 'If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#focus-order',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/focus-order',
 								level: 1
@@ -4659,7 +4659,7 @@ module.exports = {
 							4: {
 								id: 'link-purpose-in-context',
 								handle: '2.4.4 Link Purpose (In Context)',
-								description: 'Success Criterion 2.4.4 Link Purpose (In Context)Understanding Link Purpose (In Context) | How to Meet Link Purpose (In Context)The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.',
+								description: 'The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context',
 								level: 1
@@ -4667,7 +4667,7 @@ module.exports = {
 							5: {
 								id: 'multiple-ways',
 								handle: '2.4.5 Multiple Ways',
-								description: 'Success Criterion 2.4.5 Multiple WaysUnderstanding Multiple Ways | How to Meet Multiple WaysMore than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.',
+								description: 'More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#multiple-ways',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways',
 								level: 2
@@ -4675,7 +4675,7 @@ module.exports = {
 							6: {
 								id: 'headings-and-labels',
 								handle: '2.4.6 Headings and Labels',
-								description: 'Success Criterion 2.4.6 Headings and LabelsUnderstanding Headings and Labels | How to Meet Headings and LabelsHeadings and labels describe topic or purpose.',
+								description: 'Headings and labels describe topic or purpose.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels',
 								level: 2
@@ -4683,7 +4683,7 @@ module.exports = {
 							7: {
 								id: 'focus-visible',
 								handle: '2.4.7 Focus Visible',
-								description: 'Success Criterion 2.4.7 Focus VisibleUnderstanding Focus Visible | How to Meet Focus Visible[Changed]Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.',
+								description: '[Changed] Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#focus-visible',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/focus-visible',
 								level: 1
@@ -4691,7 +4691,7 @@ module.exports = {
 							8: {
 								id: 'location',
 								handle: '2.4.8 Location',
-								description: 'Success Criterion 2.4.8 LocationUnderstanding Location | How to Meet LocationInformation about the user\'s location within a set of Web pages is available.',
+								description: 'Information about the user\'s location within a set of Web pages is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#location',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/location',
 								level: 3
@@ -4699,7 +4699,7 @@ module.exports = {
 							9: {
 								id: 'link-purpose-link-only',
 								handle: '2.4.9 Link Purpose (Link Only)',
-								description: 'Success Criterion 2.4.9 Link Purpose (Link Only)Understanding Link Purpose (Link Only) | How to Meet Link Purpose (Link Only)A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.',
+								description: 'A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-link-only',
 								level: 3
@@ -4707,7 +4707,7 @@ module.exports = {
 							10: {
 								id: 'section-headings',
 								handle: '2.4.10 Section Headings',
-								description: 'Success Criterion 2.4.10 Section HeadingsUnderstanding Section Headings | How to Meet Section HeadingsSection headings are used to organize the content.Note"Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content.NoteThis success criterion covers sections within writing, not user interface components. User interface components are covered under Success Criterion 4.1.2.',
+								description: 'Section headings are used to organize the content. Note: "Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content. Note: This success criterion covers sections within writing, not user interface components. User interface components are covered under Success Criterion 4.1.2.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#section-headings',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/section-headings',
 								level: 3
@@ -4715,7 +4715,7 @@ module.exports = {
 							11: {
 								id: 'focus-appearance-minimum',
 								handle: '2.4.11 Focus Appearance (Minimum)',
-								description: 'Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 3:1 between the colors in the focused and unfocused states. Minimum area: The contrasting area is at least as large as: Outline: the area of a 1 CSS pixel thick perimeter of the unfocused component, or Shape: the area of a 4 CSS pixel thick line along the shortest side of a minimum bounding box of the unfocused component, and no thinner than 2 CSS pixels. Adjacent contrast: The contrasting area also has a contrast ratio of least 3:1 against adjacent colors in the focused component, or the contrasting area has a thickness of at least 2 CSS pixels. Not fully obscured: The item with focus is not entirely hidden by author-created content.NoteA keyboard focus indicator which has a pattern or gradient may have parts that do not meet the 3:1 contrast ratio for the change of contrast, as long as an area equal to the minimum does meet the contrast ratio.NoteIf the component has a visible boundary smaller than the hit area, or the size of the component is not available, the minimum area can be taken from the visible boundary.Editor\'s noteThe working group is interested in feedback about the minimum area metric, and if there are unusual scenarios where visible indicators are caught by the wording.',
+								description: 'When user interface components receive keyboard focus, all of the following are true: Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 3:1 between the colors in the focused and unfocused states. Minimum area: The contrasting area is at least as large as: Outline: the area of a 1 CSS pixel thick perimeter of the unfocused component, or Shape: the area of a 4 CSS pixel thick line along the shortest side of a minimum bounding box of the unfocused component, and no thinner than 2 CSS pixels. Adjacent contrast: The contrasting area also has a contrast ratio of least 3:1 against adjacent colors in the focused component, or the contrasting area has a thickness of at least 2 CSS pixels. Not fully obscured: The item with focus is not entirely hidden by author-created content. Note: A keyboard focus indicator which has a pattern or gradient may have parts that do not meet the 3:1 contrast ratio for the change of contrast, as long as an area equal to the minimum does meet the contrast ratio. Note: If the component has a visible boundary smaller than the hit area, or the size of the component is not available, the minimum area can be taken from the visible boundary. Editor\'s noteThe working group is interested in feedback about the minimum area metric, and if there are unusual scenarios where visible indicators are caught by the wording.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance-minimum',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum',
 								level: 2
@@ -4723,7 +4723,7 @@ module.exports = {
 							12: {
 								id: 'focus-appearance-enhanced',
 								handle: '2.4.12 Focus Appearance (Enhanced)',
-								description: 'Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 4.5:1 between the colors in the focused and unfocused states. Minimum area: The contrasting area is at least double the area of a 1 CSS pixel perimeter of the unfocused component; Not obscured: No part of the focus indicator is hidden by author-created content.',
+								description: 'When user interface components have keyboard focus, all of the following are true: Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 4.5:1 between the colors in the focused and unfocused states. Minimum area: The contrasting area is at least double the area of a 1 CSS pixel perimeter of the unfocused component; Not obscured: No part of the focus indicator is hidden by author-created content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance-enhanced',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced',
 								level: 3
@@ -4731,7 +4731,7 @@ module.exports = {
 							13: {
 								id: 'page-break-navigation',
 								handle: '2.4.13 Page Break Navigation',
-								description: 'Success Criterion 2.4.13 Page Break NavigationUnderstanding Page Break Navigation | How to Meet Page Break Navigation[New]For web content with page break locators, a mechanism is available to navigate to each locator.',
+								description: 'For web content with page break locators, a mechanism is available to navigate to each locator.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#page-break-navigation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/page-break-navigation',
 								level: 1
@@ -4745,7 +4745,7 @@ module.exports = {
 							1: {
 								id: 'pointer-gestures',
 								handle: '2.5.1 Pointer Gestures',
-								description: 'Success Criterion 2.5.1 Pointer GesturesUnderstanding Pointer Gestures | How to Meet Pointer GesturesAll functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.NoteThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
+								description: 'All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential. Note: This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#pointer-gestures',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures',
 								level: 1
@@ -4753,7 +4753,7 @@ module.exports = {
 							2: {
 								id: 'pointer-cancellation',
 								handle: '2.5.2 Pointer Cancellation',
-								description: 'No Down-Event The down-event of the pointer is not used to execute any part of the function; Abort or Undo Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion; Up Reversal The up-event reverses any outcome of the preceding down-event; Essential Completing the function on the down-event is essential.NoteFunctions that emulate a keyboard or numeric keypad key press are considered essential.NoteThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
+								description: 'For functionality that can be operated using a single pointer, at least one of the following is true: No Down-Event: The down-event of the pointer is not used to execute any part of the function; Abort or Undo: Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion; Up Reversal: The up-event reverses any outcome of the preceding down-event; Essential: Completing the function on the down-event is essential. Note: Functions that emulate a keyboard or numeric keypad key press are considered essential. Note: This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#pointer-cancellation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation',
 								level: 1
@@ -4761,7 +4761,7 @@ module.exports = {
 							3: {
 								id: 'label-in-name',
 								handle: '2.5.3 Label in Name',
-								description: 'Success Criterion 2.5.3 Label in NameUnderstanding Label in Name | How to Meet Label in NameFor user interface components with labels that include text or images of text, the name contains the text that is presented visually.NoteA best practice is to have the text of the label at the start of the name.',
+								description: 'For user interface components with labels that include text or images of text, the name contains the text that is presented visually. Note: A best practice is to have the text of the label at the start of the name.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#label-in-name',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/label-in-name',
 								level: 1
@@ -4769,7 +4769,7 @@ module.exports = {
 							4: {
 								id: 'motion-actuation',
 								handle: '2.5.4 Motion Actuation',
-								description: 'Supported Interface The motion is used to operate functionality through an accessibility supported interface; Essential The motion is essential for the function and doing so would invalidate the activity.',
+								description: 'Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when: Supported Interface: The motion is used to operate functionality through an accessibility supported interface; Essential: The motion is essential for the function and doing so would invalidate the activity.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#motion-actuation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation',
 								level: 1
@@ -4777,7 +4777,7 @@ module.exports = {
 							5: {
 								id: 'target-size-enhanced',
 								handle: '2.5.5 Target Size (Enhanced)',
-								description: 'Equivalent The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels; Inline The target is in a sentence or block of text; User Agent Control The size of the target is determined by the user agent and is not modified by the author; Essential A particular presentation of the target is essential to the information being conveyed.',
+								description: 'The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when: Equivalent: The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels; Inline: The target is in a sentence or block of text; User Agent Control: The size of the target is determined by the user agent and is not modified by the author; Essential: A particular presentation of the target is essential to the information being conveyed.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced',
 								level: 3
@@ -4785,7 +4785,7 @@ module.exports = {
 							6: {
 								id: 'concurrent-input-mechanisms',
 								handle: '2.5.6 Concurrent Input Mechanisms',
-								description: 'Success Criterion 2.5.6 Concurrent Input MechanismsUnderstanding Concurrent Input Mechanisms | How to Meet Concurrent Input MechanismsWeb content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.',
+								description: 'Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#concurrent-input-mechanisms',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/concurrent-input-mechanisms',
 								level: 3
@@ -4793,7 +4793,7 @@ module.exports = {
 							7: {
 								id: 'dragging-movements',
 								handle: '2.5.7 Dragging Movements',
-								description: 'Success Criterion 2.5.7 Dragging MovementsUnderstanding Dragging Movements | How to Meet Dragging Movements[New]All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging, unless dragging is essential.NoteThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).Editor\'s noteIs there an assistive technology that helps for people with mobility impairments? The group would like feedback on the frontier between AT & author responsibility.',
+								description: 'All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging, unless dragging is essential. Note: This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology). Editor\'s noteIs there an assistive technology that helps for people with mobility impairments? The group would like feedback on the frontier between AT & author responsibility.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#dragging-movements',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements',
 								level: 2
@@ -4801,7 +4801,7 @@ module.exports = {
 							8: {
 								id: 'target-size-minimum',
 								handle: '2.5.8 Target Size (Minimum)',
-								description: 'Spacing: The target offset is at least 24 CSS pixels to every adjacent target; Inline: The target is in a sentence or block of text; Essential: A particular presentation of the target is essential to the information being conveyed.NoteTargets that allow for values to be selected spatially based on position within the target are considered one target for the purpose of the success criterion. Examples include sliders with granular values, color pickers displaying a gradient of colors, or editable areas where you position the cursor.Editor\'s noteAre there issues with internationalization when describing inline links?Editor\'s noteAre there issues with pop-over content overlapping targets triggering failures?',
+								description: 'Targets have an area of at least 24 by 24 CSS pixels, except where: Spacing: The target offset is at least 24 CSS pixels to every adjacent target; Inline: The target is in a sentence or block of text; Essential: A particular presentation of the target is essential to the information being conveyed. Note: Targets that allow for values to be selected spatially based on position within the target are considered one target for the purpose of the success criterion. Examples include sliders with granular values, color pickers displaying a gradient of colors, or editable areas where you position the cursor. Editor\'s noteAre there issues with internationalization when describing inline links? Editor\'s noteAre there issues with pop-over content overlapping targets triggering failures?',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#target-size-minimum',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum',
 								level: 2
@@ -4821,7 +4821,7 @@ module.exports = {
 							1: {
 								id: 'language-of-page',
 								handle: '3.1.1 Language of Page',
-								description: 'Success Criterion 3.1.1 Language of PageUnderstanding Language of Page | How to Meet Language of PageThe default human language of each Web page can be programmatically determined.',
+								description: 'The default human language of each Web page can be programmatically determined.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#language-of-page',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/language-of-page',
 								level: 1
@@ -4829,7 +4829,7 @@ module.exports = {
 							2: {
 								id: 'language-of-parts',
 								handle: '3.1.2 Language of Parts',
-								description: 'Success Criterion 3.1.2 Language of PartsUnderstanding Language of Parts | How to Meet Language of PartsThe human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.',
+								description: 'The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#language-of-parts',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts',
 								level: 2
@@ -4837,7 +4837,7 @@ module.exports = {
 							3: {
 								id: 'unusual-words',
 								handle: '3.1.3 Unusual Words',
-								description: 'Success Criterion 3.1.3 Unusual WordsUnderstanding Unusual Words | How to Meet Unusual WordsA mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.',
+								description: 'A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#unusual-words',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/unusual-words',
 								level: 3
@@ -4845,7 +4845,7 @@ module.exports = {
 							4: {
 								id: 'abbreviations',
 								handle: '3.1.4 Abbreviations',
-								description: 'Success Criterion 3.1.4 AbbreviationsUnderstanding Abbreviations | How to Meet AbbreviationsA mechanism for identifying the expanded form or meaning of abbreviations is available.',
+								description: 'A mechanism for identifying the expanded form or meaning of abbreviations is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#abbreviations',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/abbreviations',
 								level: 3
@@ -4853,7 +4853,7 @@ module.exports = {
 							5: {
 								id: 'reading-level',
 								handle: '3.1.5 Reading Level',
-								description: 'Success Criterion 3.1.5 Reading LevelUnderstanding Reading Level | How to Meet Reading LevelWhen text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.',
+								description: 'When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#reading-level',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/reading-level',
 								level: 3
@@ -4861,7 +4861,7 @@ module.exports = {
 							6: {
 								id: 'pronunciation',
 								handle: '3.1.6 Pronunciation',
-								description: 'Success Criterion 3.1.6 PronunciationUnderstanding Pronunciation | How to Meet PronunciationA mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.',
+								description: 'A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#pronunciation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/pronunciation',
 								level: 3
@@ -4875,7 +4875,7 @@ module.exports = {
 							1: {
 								id: 'on-focus',
 								handle: '3.2.1 On Focus',
-								description: 'Success Criterion 3.2.1 On FocusUnderstanding On Focus | How to Meet On FocusWhen any user interface component receives focus, it does not initiate a change of context.',
+								description: 'When any user interface component receives focus, it does not initiate a change of context.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#on-focus',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/on-focus',
 								level: 1
@@ -4883,7 +4883,7 @@ module.exports = {
 							2: {
 								id: 'on-input',
 								handle: '3.2.2 On Input',
-								description: 'Success Criterion 3.2.2 On InputUnderstanding On Input | How to Meet On InputChanging the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.',
+								description: 'Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#on-input',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/on-input',
 								level: 1
@@ -4891,7 +4891,7 @@ module.exports = {
 							3: {
 								id: 'consistent-navigation',
 								handle: '3.2.3 Consistent Navigation',
-								description: 'Success Criterion 3.2.3 Consistent NavigationUnderstanding Consistent Navigation | How to Meet Consistent NavigationNavigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.',
+								description: 'Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation',
 								level: 2
@@ -4899,7 +4899,7 @@ module.exports = {
 							4: {
 								id: 'consistent-identification',
 								handle: '3.2.4 Consistent Identification',
-								description: 'Success Criterion 3.2.4 Consistent IdentificationUnderstanding Consistent Identification | How to Meet Consistent IdentificationComponents that have the same functionality within a set of Web pages are identified consistently.',
+								description: 'Components that have the same functionality within a set of Web pages are identified consistently.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification',
 								level: 2
@@ -4907,7 +4907,7 @@ module.exports = {
 							5: {
 								id: 'change-on-request',
 								handle: '3.2.5 Change on Request',
-								description: 'Success Criterion 3.2.5 Change on RequestUnderstanding Change on Request | How to Meet Change on RequestChanges of context are initiated only by user request or a mechanism is available to turn off such changes.',
+								description: 'Changes of context are initiated only by user request or a mechanism is available to turn off such changes.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#change-on-request',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/change-on-request',
 								level: 3
@@ -4915,7 +4915,7 @@ module.exports = {
 							6: {
 								id: 'consistent-help',
 								handle: '3.2.6 Consistent Help',
-								description: 'Human contact details; Human contact mechanism; Self-help option; A fully automated contact mechanism.NoteAccess to help mechanisms may be provided directly on the page, or may be provided via a direct link to a different page containing the information.',
+								description: 'For each web page within a set of web pages that provides one or more of the following ways of finding help, access to at least one form of help is included in the same relative order on each page: Human contact details; Human contact mechanism; Self-help option; A fully automated contact mechanism. Note: Access to help mechanisms may be provided directly on the page, or may be provided via a direct link to a different page containing the information.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#consistent-help',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/consistent-help',
 								level: 1
@@ -4923,7 +4923,7 @@ module.exports = {
 							7: {
 								id: 'visible-controls',
 								handle: '3.2.7 Visible Controls',
-								description: 'The information needed to identify the user interface components is available through an equivalent component that is visible on the same page or on a different step in a multi-step process without requiring pointer hover or keyboard focus; The component is provided specifically to enhance the experience for keyboard navigation; A mechanism is available to make the information persistently visible; Hiding the information needed to identify the component is essential.NoteUser interface components can be available through other visible components such as sub-menus, edit buttons, tabs, or thumbnails of media.Editor\'s noteThe working group is interested in feedback about whether there are Components determined by the user agent that should not be in scope.',
+								description: 'Where receiving pointer hover or keyboard focus triggers user interface components to be visible, information needed to identify that user interface components are available is visible, except when: The information needed to identify the user interface components is available through an equivalent component that is visible on the same page or on a different step in a multi-step process without requiring pointer hover or keyboard focus; The component is provided specifically to enhance the experience for keyboard navigation; A mechanism is available to make the information persistently visible; Hiding the information needed to identify the component is essential. Note: User interface components can be available through other visible components such as sub-menus, edit buttons, tabs, or thumbnails of media. Editor\'s noteThe working group is interested in feedback about whether there are Components determined by the user agent that should not be in scope.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#visible-controls',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/visible-controls',
 								level: 2
@@ -4937,7 +4937,7 @@ module.exports = {
 							1: {
 								id: 'error-identification',
 								handle: '3.3.1 Error Identification',
-								description: 'Success Criterion 3.3.1 Error IdentificationUnderstanding Error Identification | How to Meet Error IdentificationIf an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.',
+								description: 'If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#error-identification',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/error-identification',
 								level: 1
@@ -4945,7 +4945,7 @@ module.exports = {
 							2: {
 								id: 'labels-or-instructions',
 								handle: '3.3.2 Labels or Instructions',
-								description: 'Success Criterion 3.3.2 Labels or InstructionsUnderstanding Labels or Instructions | How to Meet Labels or InstructionsLabels or instructions are provided when content requires user input.',
+								description: 'Labels or instructions are provided when content requires user input.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions',
 								level: 1
@@ -4953,7 +4953,7 @@ module.exports = {
 							3: {
 								id: 'error-suggestion',
 								handle: '3.3.3 Error Suggestion',
-								description: 'Success Criterion 3.3.3 Error SuggestionUnderstanding Error Suggestion | How to Meet Error SuggestionIf an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.',
+								description: 'If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion',
 								level: 2
@@ -4961,7 +4961,7 @@ module.exports = {
 							4: {
 								id: 'error-prevention-legal-financial-data',
 								handle: '3.3.4 Error Prevention (Legal, Financial, Data)',
-								description: 'ReversibleSubmissions are reversible. CheckedData entered by the user is checked for input errors and the user is provided an opportunity to correct them. ConfirmedA mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
+								description: 'For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-legal-financial-data',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data',
 								level: 2
@@ -4969,7 +4969,7 @@ module.exports = {
 							5: {
 								id: 'help',
 								handle: '3.3.5 Help',
-								description: 'Success Criterion 3.3.5 HelpUnderstanding Help | How to Meet HelpContext-sensitive help is available.',
+								description: 'Context-sensitive help is available.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#help',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/help',
 								level: 3
@@ -4977,7 +4977,7 @@ module.exports = {
 							6: {
 								id: 'error-prevention-all',
 								handle: '3.3.6 Error Prevention (All)',
-								description: 'ReversibleSubmissions are reversible. CheckedData entered by the user is checked for input errors and the user is provided an opportunity to correct them. ConfirmedA mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
+								description: 'For Web pages that require the user to submit information, at least one of the following is true: Reversible: Submissions are reversible. Checked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them. Confirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-all',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-all',
 								level: 3
@@ -4985,7 +4985,7 @@ module.exports = {
 							7: {
 								id: 'accessible-authentication',
 								handle: '3.3.7 Accessible Authentication',
-								description: ' 1) support for password entry by password managers to address the memorization cognitive function test, and 2) copy and paste to help address transcription cognitive function test.',
+								description: 'For each step in an authentication process that relies on a cognitive function test, at least one other authentication method is available that does not rely on a cognitive function test, or a mechanism is available to assist the user in completing the cognitive function test. Note: Examples of mechanisms include: 1) support for password entry by password managers to address the memorization cognitive function test, and 2) copy and paste to help address transcription cognitive function test.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication',
 								level: 1
@@ -4993,7 +4993,7 @@ module.exports = {
 							8: {
 								id: 'redundant-entry',
 								handle: '3.3.8 Redundant entry',
-								description: 'auto-populated, or available for the user to select.Except when:re-entering the information is essential, the information is required to ensure the security of the content, or previously entered information is no longer valid.Editor\'s noteAre there issues storing the data so a user can access it in subsequent steps?Editor\'s noteAre there broader exceptions needed than essential? E.g. for mandated or required information re-entry.',
+								description: 'Information previously entered by or provided to the user that is required to be entered again in the same process and in the same user-session is either: auto-populated, or available for the user to select. Except when: re-entering the information is essential, the information is required to ensure the security of the content, or previously entered information is no longer valid. Editor\'s noteAre there issues storing the data so a user can access it in subsequent steps? Editor\'s noteAre there broader exceptions needed than essential? E.g. for mandated or required information re-entry.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#redundant-entry',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry',
 								level: 1
@@ -5013,7 +5013,7 @@ module.exports = {
 							1: {
 								id: 'parsing',
 								handle: '4.1.1 Parsing',
-								description: 'Success Criterion 4.1.1 ParsingUnderstanding Parsing | How to Meet ParsingIn content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.NoteStart and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.',
+								description: 'In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features. Note: Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#parsing',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/parsing',
 								level: 1
@@ -5021,7 +5021,7 @@ module.exports = {
 							2: {
 								id: 'name-role-value',
 								handle: '4.1.2 Name, Role, Value',
-								description: ' form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.NoteThis success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.',
+								description: 'For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. Note: This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#name-role-value',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/name-role-value',
 								level: 1
@@ -5029,7 +5029,7 @@ module.exports = {
 							3: {
 								id: 'status-messages',
 								handle: '4.1.3 Status Messages',
-								description: 'Success Criterion 4.1.3 Status MessagesUnderstanding Status Messages | How to Meet Status MessagesIn content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.',
+								description: 'In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.',
 								quickReference: 'https://www.w3.org/WAI/WCAG22/quickref/#status-messages',
 								detailedReference: 'https://www.w3.org/WAI/WCAG22/Understanding/status-messages',
 								level: 2

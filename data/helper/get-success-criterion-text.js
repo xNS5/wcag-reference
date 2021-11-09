@@ -14,4 +14,4 @@ function getSuccessCriterionText(successCriterionNode) {
 
 module.exports = {
 	getSuccessCriterionText
-}
+};

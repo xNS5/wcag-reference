@@ -23,4 +23,4 @@ function mergeHeading(
 
 module.exports = {
 	mergeHeading
-}
+};

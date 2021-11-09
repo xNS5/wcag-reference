@@ -2,7 +2,7 @@ const {JSDOM} = require('jsdom');
 const got = require('got');
 
 const {getInnerText} = require('./helper/get-inner-text.js');
-const {getDescription} = require('./helper/get-inner-text');
+const {getDescription} = require('./helper/get-wcag-description.js');
 
 /**
  * Extracts all needed information from https://www.w3.org/TR/WCAG20/
@@ -41,7 +41,7 @@ async function getWcag20information() {
 				successCriterion.id = successCriterionNode.id;
 				successCriterion.handle = getInnerText(successCriterionNode
 					.querySelector('.sc-handle')).replace(':', '');
-				successCriterion.description = getDescription(successCriterionNode);
+				successCriterion.description = getDescription(successCriterionNode, 0);
 				successCriterion.quickReference = successCriterionNode
 					.querySelector('a[href*="quickref"]').href;
 				successCriterion.detailedReference = successCriterionNode
