@@ -48,9 +48,10 @@ async function getWcag22information() {
 				'.sc'
 			)) {
 				const successCriterion = {};
+				const handle = getSuccessCriterionText(successCriterionNode);
 				successCriterion.id = successCriterionNode.id;
-				successCriterion.handle =
-					getSuccessCriterionText(successCriterionNode);
+				successCriterion.num = handle.split(' ')[0];
+				successCriterion.handle = handle.replaceAll(/([0-9]+.[0-9]+.[0-9]+ )/g, '');
 				successCriterion.description = getDescription(successCriterionNode, 2);
 				successCriterion.quickReference =
 					'https://www.w3.org/WAI/WCAG22/quickref/#' +
@@ -64,7 +65,7 @@ async function getWcag22information() {
 					.groups.level.split('').length;
 
 				guideline.successCriterions[
-					successCriterion.handle.match(
+					successCriterion.num.match(
 						/^\d\.\d\.(?<number>\d+)/
 					).groups.number
 				] = successCriterion;

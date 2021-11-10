@@ -9,7 +9,7 @@ const {getWcag22information, getWcag22Techniques} = require('./wcag22.js');
  * Generates the data used by this library.
  */
 async function generateData() {
-	const file = './data.js';
+	const file = './data/data.js';
 	const data = {
 		wcag20: {
 			information: await getWcag20information(),

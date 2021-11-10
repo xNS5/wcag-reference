@@ -38,9 +38,10 @@ async function getWcag20information() {
 			guideline.successCriterions = {};
 			for (const successCriterionNode of guidelineContainer.querySelectorAll('.sc')) {
 				const successCriterion = {};
+				const handle = getInnerText(successCriterionNode.querySelector('.sc-handle'));
 				successCriterion.id = successCriterionNode.id;
-				successCriterion.handle = getInnerText(successCriterionNode
-					.querySelector('.sc-handle')).replace(':', '');
+				successCriterion.num = handle.split(' ')[0];
+				successCriterion.handle = handle.replaceAll(/([0-9]+.[0-9]+.[0-9]+ )/g, '').replace(':', '');
 				successCriterion.description = getDescription(successCriterionNode, 0);
 				successCriterion.quickReference = successCriterionNode
 					.querySelector('a[href*="quickref"]').href;
@@ -51,7 +52,7 @@ async function getWcag20information() {
 					.textContent.match(/Level (?<level>A{1,3})/)
 					.groups.level.split('').length;
 
-				guideline.successCriterions[successCriterion.handle.match(/^\d\.\d\.(?<number>\d+)/).groups.number] = successCriterion;
+				guideline.successCriterions[successCriterion.num.match(/^\d\.\d\.(?<number>\d+)/).groups.number] = successCriterion;
 			}
 
 			principle.guidelines[

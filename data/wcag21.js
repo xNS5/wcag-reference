@@ -42,9 +42,10 @@ async function getWcag21information() {
 			for (const successCriterionNode of guidelineNode.querySelectorAll('.sc'
 			)) {
 				const successCriterion = {};
+				const handle = getSuccessCriterionText(successCriterionNode);
 				successCriterion.id = successCriterionNode.id;
-				successCriterion.handle =
-					getSuccessCriterionText(successCriterionNode);
+				successCriterion.num = handle.split(' ')[0];
+				successCriterion.handle = handle.replaceAll(/([0-9]+.[0-9]+.[0-9]+ )/g, '');
 				successCriterion.description = getDescription(successCriterionNode, 1);
 				successCriterion.quickReference =
 					successCriterionNode.querySelector(
@@ -60,7 +61,7 @@ async function getWcag21information() {
 					.groups.level.split('').length;
 
 				guideline.successCriterions[
-					successCriterion.handle.match(
+					successCriterion.num.match(
 						/^\d\.\d\.(?<number>\d+)/
 					).groups.number
 				] = successCriterion;
