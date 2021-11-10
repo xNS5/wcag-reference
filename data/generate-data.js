@@ -9,6 +9,7 @@ const {getWcag22information, getWcag22Techniques} = require('./wcag22.js');
  * Generates the data used by this library.
  */
 async function generateData() {
+	const file = './data.js';
 	const data = {
 		wcag20: {
 			information: await getWcag20information(),
@@ -27,11 +28,11 @@ async function generateData() {
 	const eslint = new ESLint({fix: true});
 
 	await writeFile(
-		'./data.js',
+		file,
 		'module.exports = ' + JSON.stringify(data, undefined, '\t') + ';'
 	)
 		// fix all style problems
-		.then(() => eslint.lintFiles('./data.js'))
+		.then(() => eslint.lintFiles(file))
 		.then(fixes => ESLint.outputFixes(fixes))
 		.catch(console.error);
 }
