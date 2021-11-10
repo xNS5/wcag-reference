@@ -28,7 +28,7 @@ async function generateData() {
 
 	await writeFile(
 		'./data.js',
-		'export default ' + JSON.stringify(data, undefined, '\t') + ';'
+		'module.exports = ' + JSON.stringify(data, undefined, '\t') + ';'
 	)
 		// fix all style problems
 		.then(() => eslint.lintFiles('./data.js'))
