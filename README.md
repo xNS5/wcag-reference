@@ -13,7 +13,7 @@ In fact there are 4 documents for each WCAG version:
 * A detailed reference "Understanding WCAG 2.x".
 * Explained techniques to meet the specific success criteria.
 
-This tool can give you a reference to the following documents. Please note that WCAG 2.2 has not officially been released yet and as of [21 May 2021](https://www.w3.org/TR/WCAG22/) there only exists a draft of the new version:
+This tool can give you a reference to the following documents. Please note that WCAG 2.2 has not officially been released yet and as of [19 January 2023](https://www.w3.org/TR/WCAG22/) there only exists a draft of the new version:
 * WCAG 2.0
     * https://www.w3.org/TR/WCAG20/
     * https://www.w3.org/WAI/WCAG20/quickref/
